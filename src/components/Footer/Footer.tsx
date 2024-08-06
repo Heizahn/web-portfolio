@@ -1,4 +1,5 @@
-import { LinkedIn } from '@/env/env';
+import { LinkedIn, MAILTO } from '@/env/env';
+import { EmailIcon } from '../icons/icons';
 
 export default function Footer() {
 	return (
@@ -13,11 +14,11 @@ export default function Footer() {
 				</span>
 				<ul className='flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0'>
 					<li>
-						<a className='hover:underline me-4 md:me-6' href='#about'>
-							Sobre mi
+						<a href={MAILTO} className='flex justify-center gap-2 items-center'>
+							<EmailIcon />
+							Contacto
 						</a>
 					</li>
-					<li>Contacto</li>
 				</ul>
 			</div>
 		</footer>

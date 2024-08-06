@@ -1,5 +1,5 @@
 import ContactLinkedIn from '@/components/Contact/contact_linkedIn';
-import { LinkedIn } from '@/env/env';
+import { Github, LinkedIn, MAILTO } from '@/env/env';
 import { EmailIcon, LinkedInIcon } from '../icons/icons';
 
 const linkStyle =
@@ -14,13 +14,18 @@ export default function SectionOne() {
 				<h2 className='text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white'>
 					Hola, soy Humberto
 				</h2>
-				<p className='mt-6 text-xl text-gray-800 dark:[&>strong]:text-purple-600 [&>strong]:text-purple-700 [&>strong]:font-semibold dark:text-gray-300'>
-					+1 año de estudio autodidacta. <strong>React Developer</strong>, manejo de
-					teologías como Next-js y React-native con Expo, Especializado en el desarrollo
-					web front-end egresado de Soy-Henry.
+				<p className='mt-6 text-xl text-gray-800 dark:[&>strong]:text-purple-700 [&>strong]:text-purple-700 [&>strong]:font-semibold dark:text-gray-300'>
+					+1 año de estudio autodidacta.{' '}
+					<strong>
+						<a target='_blank' href={Github}>
+							React Developer
+						</a>
+					</strong>
+					, manejo de tecnologías como Next-js y React-native con Expo, Especializado en
+					el desarrollo web front-end egresado de Soy-Henry.
 				</p>
 				<nav className='flex flex-wrap gap-4 mt-8'>
-					<a className={linkStyle} href='#'>
+					<a className={linkStyle} href={MAILTO}>
 						<EmailIcon />
 						Contácteme
 					</a>

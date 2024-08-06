@@ -13,22 +13,22 @@ export default function Home() {
 
 			<SectionOne />
 
-			<div>
+			<section id='study' className='pt-28'>
 				<SectionStudy />
-			</div>
+			</section>
 
-			<div className='algunaClase pt-20'>
+			<section id='projects' className='pt-28'>
 				<SectionProjects />
-			</div>
+			</section>
 
-			<div className='algunaClase pt-10 justify-center'>
+			<section id='about' className='h-screen pt-28 flex flex-col justify-between'>
 				<div>
 					<SectionAbout />
 				</div>
 				<div>
 					<Footer />
 				</div>
-			</div>
+			</section>
 		</main>
 	);
 }
