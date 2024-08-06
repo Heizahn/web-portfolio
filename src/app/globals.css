@@ -26,8 +26,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+a:hover{
+  cursor: pointer;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
