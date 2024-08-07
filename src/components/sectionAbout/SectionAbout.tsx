@@ -5,7 +5,7 @@ import LinkTech from './LinkTech';
 
 export default function SectionAbout() {
 	return (
-		<section className='section undefined  w-full  mx-auto container lg:max-w-4xl md:max-w-2xl'>
+		<section className='w-full  mx-auto container lg:max-w-4xl md:max-w-2xl'>
 			<h2 className='flex items-center mb-6 text-3xl gap-x-3 font-semibold text-black/80 dark:text-white'>
 				<UserIcon />
 				Sobre mi

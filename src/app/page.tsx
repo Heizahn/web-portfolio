@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer/Footer';
-import Navbar from '@/components/Navbar/Navbar';
+import Navbar, { NavbarMobile } from '@/components/Navbar/Navbar';
 import SectionOne from '@/components/section-1/sectionOne';
 import SectionAbout from '@/components/sectionAbout/SectionAbout';
 import SectionProjects from '@/components/sectionproyects/SectionProyects';
@@ -8,27 +8,36 @@ import './stylesSection.css';
 
 export default function Home() {
 	return (
-		<main className='px-4'>
+		<main className=''>
 			<Navbar />
 
-			<SectionOne />
+			<div className='px-4'>
+				<SectionOne />
+			</div>
 
-			<section id='study' className='pt-28'>
-				<SectionStudy />
-			</section>
+			<NavbarMobile />
 
-			<section id='projects' className='pt-28'>
-				<SectionProjects />
-			</section>
+			<div className='px-4'>
+				<section id='study' className='pt-16  md:pt-16'>
+					<SectionStudy />
+				</section>
 
-			<section id='about' className='h-screen pt-28 flex flex-col justify-between'>
-				<div>
-					<SectionAbout />
-				</div>
-				<div>
-					<Footer />
-				</div>
-			</section>
+				<section id='projects' className='pt-16 md:pt-16'>
+					<SectionProjects />
+				</section>
+
+				<section
+					id='about'
+					className='pt-16 md:h-screen md:flex md:flex-col md:justify-between   md:pt-16'
+				>
+					<div>
+						<SectionAbout />
+					</div>
+					<div>
+						<Footer />
+					</div>
+				</section>
+			</div>
 		</main>
 	);
 }
