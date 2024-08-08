@@ -5,6 +5,7 @@ import './navbar.css';
 import { Link } from 'react-scroll';
 import { MdEmail } from 'react-icons/md';
 
+import LinkNext from 'next/link';
 export default function Navbar() {
 	return (
 		<header className='hidden md:fixed top-0 z-10 md:flex items-center justify-center w-full mx-auto mt-2 '>
