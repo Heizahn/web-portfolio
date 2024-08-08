@@ -3,19 +3,20 @@ import { GithubIcon, StudyIcon } from '../icons/icons';
 
 export default function SectionStudy() {
 	return (
-		<section className='section w-full mx-auto container lg:max-w-4xl md:max-w-2xl'>
+		<section
+			id='study'
+			className='w-full pt-16 mx-auto container lg:max-w-4xl md:max-w-2xl'
+		>
 			<h2 className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white'>
 				<StudyIcon />
 				Material de Henry
 			</h2>
 			<ol className='relative mt-16'>
 				<li className=''>
-					<div
-						className={`relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]`}
-					>
+					<div className='relative mx-12 pb-12 grid before:absolute  md:grid-cols-5 md:gap-10 md:space-x-4]'>
 						<div className='relative pb-12 md:col-span-2'>
 							<div className='sticky top-0'>
-								<span className='text-purple-700 -left-[44px] absolute rounded-full text-4xl'>
+								<span className='text-purple-700 -left-[44px] top-[-9px]  absolute rounded-full text-4xl'>
 									•
 								</span>
 								<h3 className='text-xl font-bold text-purple-700'>Modulo 1 y 2</h3>
@@ -46,12 +47,10 @@ export default function SectionStudy() {
 					</div>
 				</li>
 				<li className=''>
-					<div
-						className={`relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]`}
-					>
+					<div className='relative mx-12 pb-12 grid before:absolute before:left-[-35px] md:grid-cols-5 md:gap-10 md:space-x-4'>
 						<div className='relative pb-12 md:col-span-2'>
 							<div className='sticky top-0'>
-								<span className='text-purple-700 -left-[44px] absolute rounded-full text-4xl'>
+								<span className='text-purple-700 -left-[44px] top-[-9px]  absolute rounded-full text-4xl'>
 									•
 								</span>
 								<h3 className='text-xl font-bold text-purple-700'>Modulo 3</h3>
@@ -84,12 +83,10 @@ export default function SectionStudy() {
 					</div>
 				</li>
 				<li className=''>
-					<div
-						className={`relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]`}
-					>
-						<div className='relative pb-12 md:col-span-2'>
+					<div className={`relative mx-12  grid md:grid-cols-5 md:gap-10 md:space-x-4`}>
+						<div className='relative md:col-span-2'>
 							<div className='sticky top-0'>
-								<span className='text-purple-700 -left-[44px] absolute rounded-full text-4xl'>
+								<span className='text-purple-700 -left-[44px] top-[-9px] absolute rounded-full text-4xl'>
 									•
 								</span>
 								<h3 className='text-xl font-bold text-purple-700'>Modulo 4</h3>
