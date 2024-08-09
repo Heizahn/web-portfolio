@@ -2,10 +2,7 @@ import { CodeIcon } from '../icons/icons';
 
 export default function SectionProjects() {
 	return (
-		<section
-			id='projects'
-			className='w-full pt-16 mx-auto container lg:max-w-4xl md:max-w-2xl'
-		>
+		<section className='w-full pt-20 mx-auto container lg:max-w-4xl md:max-w-2xl'>
 			<h2 className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white'>
 				<CodeIcon />
 				Proyectos
