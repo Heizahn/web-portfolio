@@ -99,7 +99,7 @@ export default function SectionStudy() {
 							Creación de un E-commerce con Next-js, dando énfasis en la especialidad del
 							Front-end developer.
 							<span className='inline-flex items-center text-lg font-medium text-purple-800 dark:text-purple-500'>
-								Esta landing page es prueba de mis conocimientos.
+								En proceso.
 							</span>
 						</div>
 					</div>

@@ -11,18 +11,15 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Home() {
 	const { ref: studyRef, inView: studyInView } = useInView({
-		rootMargin: '40px 0px 10px 0px',
 		initialInView: false,
 		threshold: 0.5,
 	});
 	const { ref: projectsRef, inView: projectsInView } = useInView({
 		initialInView: false,
-		rootMargin: '10px 0px 10px 0px',
 		threshold: 0.5,
 	});
 	const { ref: aboutRef, inView: aboutInView } = useInView({
 		initialInView: false,
-		rootMargin: '10px 0px 10px 0px',
 		threshold: 0.5,
 	});
 
@@ -36,7 +33,9 @@ export default function Home() {
 		} else if (studyInView) {
 			setElementInView('study');
 		} else {
-			setElementInView('');
+			if (scrollY < 400) {
+				setElementInView('');
+			}
 		}
 	}, [aboutInView, projectsInView, studyInView]);
 
