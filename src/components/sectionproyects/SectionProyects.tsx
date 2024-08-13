@@ -4,7 +4,7 @@ import ProjectOne from './projectOne';
 export default function SectionProjects() {
 	return (
 		<section className='w-full pt-20 mx-auto container lg:max-w-4xl md:max-w-2xl'>
-			<h2 className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white'>
+			<h2 className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white'>
 				<CodeIcon />
 				Proyectos
 			</h2>
@@ -21,7 +21,7 @@ export default function SectionProjects() {
 						</div>
 					</div>
 					<div className='w-full md:w-1/2 md:max-w-lg'>
-						<h3 className='text-2xl font-bold text-gray-800 dark:text-gray-100'>
+						<h3 className='text-2xl font-bold text-gray-100'>
 							SVGL - A beautiful library with SVG logos{' '}
 						</h3>
 						<div className='flex flex-wrap mt-2'>
@@ -33,7 +33,7 @@ export default function SectionProjects() {
 									</span>
 								</li>
 							</ul>
-							<div className='mt-2 text-gray-700 dark:text-gray-400'>
+							<div className='mt-2 text-gray-400'>
 								Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes.
 								+2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.
 							</div>

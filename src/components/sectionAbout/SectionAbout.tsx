@@ -6,12 +6,12 @@ import LinkTech from './LinkTech';
 export default function SectionAbout() {
 	return (
 		<section className='w-full  mx-auto container lg:max-w-4xl md:max-w-2xl'>
-			<h2 className='flex items-center mb-6 text-3xl gap-x-3 font-semibold text-black/80 dark:text-white'>
+			<h2 className='flex items-center mb-6 text-3xl gap-x-3 font-semibold text-white'>
 				<UserIcon />
 				Sobre mi
 			</h2>
-			<article className='flex flex-col text-base lg:text-xl items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row'>
-				<div className='[&>p]:mb-4 [&>p>strong]:text-gray-900 dark:[&>p>strong]:text-purple-600 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1 '>
+			<article className='flex flex-col text-base lg:text-xl items-center justify-center gap-8 text-gray-300 md:flex-row'>
+				<div className='[&>p]:mb-4  [&>p>strong]:text-purple-600 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1 '>
 					<p>
 						Me llamo Humberto Bracho pero mis amigos me dicen Heizahn, Empece en la
 						programación hace más de 2 años aprendiendo por cuenta propia. Actualmente me

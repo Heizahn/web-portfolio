@@ -11,10 +11,10 @@ export default function SectionOne() {
 				<div className='flex gap-4 mb-4'>
 					<ContactLinkedIn />
 				</div>
-				<h2 className='text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white'>
+				<h2 className='text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl'>
 					Hola, soy Humberto
 				</h2>
-				<p className='mt-6 text-xl text-gray-800 dark:[&>strong]:text-purple-700 [&>strong]:text-purple-800 [&>strong]:font-semibold dark:text-gray-300'>
+				<p className='mt-6 text-xl text-gray-200 [&>strong]:text-purple-700 [&>strong]:font-semibold'>
 					+1 año de estudio autodidacta.{' '}
 					<strong>
 						<a target='_blank' href={Github}>

@@ -2,6 +2,7 @@
 
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
+import ParticlesBack from '@/components/particles/ParticlesBack';
 import SectionOne from '@/components/section-1/sectionOne';
 import SectionAbout from '@/components/sectionAbout/SectionAbout';
 import SectionProjects from '@/components/sectionproyects/SectionProyects';
@@ -42,17 +43,13 @@ export default function Home() {
 	return (
 		<main className='px-4'>
 			<SectionOne />
-
 			<Navbar inView={elementInView} />
-
 			<section ref={studyRef} id='study'>
 				<SectionStudy />
 			</section>
-
 			<section ref={projectsRef} id='projects' className='mt-16'>
 				<SectionProjects />
 			</section>
-
 			<section
 				ref={aboutRef}
 				id='about'

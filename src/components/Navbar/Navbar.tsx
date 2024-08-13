@@ -4,8 +4,8 @@ import { MdEmail } from 'react-icons/md';
 
 export default function Navbar({ inView }: { inView: string }) {
 	return (
-		<header className='sticky top-[-1px] z-10 flex items-center justify-center w-full  md:mb-10'>
-			<nav className='flex py-2 w-full text-base md:text-lg font-semibold  text-gray-600 dark:text-gray-200 justify-between items-center  md:py-3	md:max-w-4xl'>
+		<header className='sticky top-[-1px] z-10 flex items-center justify-center w-full  md:mb-10 '>
+			<nav className='flex py-2 w-full text-base md:text-lg font-semibold text-gray-200 justify-between items-center  md:py-3	md:max-w-4xl'>
 				<Link
 					href='/#study'
 					className={
