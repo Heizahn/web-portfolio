@@ -16,10 +16,6 @@ export default function ParticlesBack() {
 		});
 	}, []);
 
-	// const particlesLoaded = (container) => {
-	// 	console.log(container);
-	// };
-
 	return (
 		<>
 			{init && (

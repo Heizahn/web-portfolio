@@ -28,40 +28,53 @@ export default function Home() {
 
 	useEffect(() => {
 		if (aboutInView) {
+			console.log('ScrollY', scrollY);
+
 			setElementInView('about');
 		} else if (projectsInView) {
+			console.log('ScrollY', scrollY);
+
 			setElementInView('projects');
 		} else if (studyInView) {
+			console.log('ScrollY', scrollY);
+
 			setElementInView('study');
 		} else {
-			if (scrollY < 420) {
+			if (scrollY < 700) {
+				console.log('setInterval', studyInView, projectsInView, aboutInView);
+				console.log('ScrollY', scrollY);
 				setElementInView('');
 			}
 		}
 	}, [aboutInView, projectsInView, studyInView]);
 
 	return (
-		<main className='px-4'>
-			<SectionOne />
+		<main>
+			<div className='px-4 z-50'>
+				<SectionOne />
+			</div>
 			<Navbar inView={elementInView} />
-			<section ref={studyRef} id='study'>
-				<SectionStudy />
-			</section>
-			<section ref={projectsRef} id='projects' className='mt-16'>
-				<SectionProjects />
-			</section>
-			<section
-				ref={aboutRef}
-				id='about'
-				className='pt-16 md:h-screen md:flex md:flex-col md:justify-between'
-			>
-				<div>
-					<SectionAbout />
-				</div>
-				<div>
-					<Footer />
-				</div>
-			</section>
+
+			<div className='px-4'>
+				<section ref={studyRef} id='study'>
+					<SectionStudy />
+				</section>
+				<section ref={projectsRef} id='projects' className='mt-16'>
+					<SectionProjects />
+				</section>
+				<section
+					ref={aboutRef}
+					id='about'
+					className='pt-16 md:h-screen md:flex md:flex-col md:justify-between'
+				>
+					<div>
+						<SectionAbout />
+					</div>
+					<div>
+						<Footer />
+					</div>
+				</section>
+			</div>
 		</main>
 	);
 }

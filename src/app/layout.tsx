@@ -18,9 +18,8 @@ export default function RootLayout({
 	return (
 		<html lang='es' className='!scroll-smooth'>
 			<body className={inter.className}>
-				{children}
-
 				<ParticlesBack />
+				{children}
 			</body>
 		</html>
 	);
