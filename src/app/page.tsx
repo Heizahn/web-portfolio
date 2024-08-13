@@ -34,11 +34,11 @@ export default function Home() {
 		} else if (studyInView) {
 			setElementInView('study');
 		} else {
-			if (scrollY < 400) {
+			if (scrollY < 380) {
 				setElementInView('');
 			}
 		}
-	}, [aboutInView, projectsInView, studyInView]);
+	}, [aboutInView, projectsInView, studyInView, scrollY]);
 
 	return (
 		<main className='px-4'>
