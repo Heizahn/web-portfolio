@@ -14,7 +14,7 @@ export default function SectionOne() {
 				<h2 className='text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white'>
 					Hola, soy Humberto
 				</h2>
-				<p className='mt-6 text-xl text-gray-800 dark:[&>strong]:text-purple-700 [&>strong]:text-purple-700 [&>strong]:font-semibold dark:text-gray-300'>
+				<p className='mt-6 text-xl text-gray-800 dark:[&>strong]:text-purple-700 [&>strong]:text-purple-800 [&>strong]:font-semibold dark:text-gray-300'>
 					+1 año de estudio autodidacta.{' '}
 					<strong>
 						<a target='_blank' href={Github}>

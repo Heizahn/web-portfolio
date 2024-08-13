@@ -11,7 +11,7 @@ export default function SectionAbout() {
 				Sobre mi
 			</h2>
 			<article className='flex flex-col text-base lg:text-xl items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row'>
-				<div className='[&>p]:mb-4 [&>p>strong]:text-purple-800 dark:[&>p>strong]:text-purple-600 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1 '>
+				<div className='[&>p]:mb-4 [&>p>strong]:text-gray-900 dark:[&>p>strong]:text-purple-600 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1 '>
 					<p>
 						Me llamo Humberto Bracho pero mis amigos me dicen Heizahn, Empece en la
 						programación hace más de 2 años aprendiendo por cuenta propia. Actualmente me
@@ -23,7 +23,7 @@ export default function SectionAbout() {
 						<strong>
 							<LinkTech href='https://es.react.dev/' title='React' />{' '}
 							<LinkTech href='https://redux-toolkit.js.org/' title='Redux-Toolkit' />{' '}
-							<LinkTech href='https://reactrouter.com/en/main' title='Redux-Router-Dom' />{' '}
+							<LinkTech href='https://reactrouter.com/en/main' title='React-Router-Dom' />{' '}
 							<LinkTech href='https://formik.org/' title='Formik' />{' '}
 							<LinkTech href='https://nextjs.org/' title='Next.js' />{' '}
 							<LinkTech href='https://expressjs.com/' title='Express.js' />{' '}

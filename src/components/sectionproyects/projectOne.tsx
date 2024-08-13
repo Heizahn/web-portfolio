@@ -21,52 +21,52 @@ export default function ProjectOne() {
 				</h3>
 				<div className='flex flex-wrap mt-2'>
 					<ul className='flex flex-row mb-2 gap-x-2 flex-wrap'>
-						<li className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-1 '>
-							<span className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
+						<li className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-1 '>
+							<span className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
 								{' '}
 								React
 							</span>
 						</li>
-						<li className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
-							<span className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
+						<li className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
+							<span className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
 								{' '}
 								Formik
 							</span>
 						</li>
-						<li className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
-							<span className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
+						<li className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
+							<span className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
 								{' '}
 								Redux-Toolkit
 							</span>
 						</li>
-						<li className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
-							<span className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
+						<li className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
+							<span className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
 								{' '}
 								React-Router-Dom
 							</span>
 						</li>
 					</ul>
 					<ul className='flex flex-row mb-2 gap-x-2 flex-wrap'>
-						<li className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
-							<span className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
+						<li className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
+							<span className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
 								{' '}
 								Express
 							</span>
 						</li>
-						<li className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
-							<span className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
+						<li className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
+							<span className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
 								{' '}
 								TypeScript
 							</span>
 						</li>
-						<li className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
-							<span className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
+						<li className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
+							<span className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
 								{' '}
 								PostgresSQL
 							</span>
 						</li>
-						<li className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
-							<span className='flex gap-x-2 rounded-full text-xs bg-purple-700 text-black/95 py-1 px-2 '>
+						<li className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
+							<span className='flex gap-x-2 rounded-xl text-sm bg-purple-900 dark:bg-purple-700 text-white dark:text-black/95 py-1 px-2 '>
 								{' '}
 								TypeORM
 							</span>
