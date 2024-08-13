@@ -2,7 +2,7 @@
 
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
-import ParticlesBack from '@/components/particles/ParticlesBack';
+
 import SectionOne from '@/components/section-1/sectionOne';
 import SectionAbout from '@/components/sectionAbout/SectionAbout';
 import SectionProjects from '@/components/sectionproyects/SectionProyects';
@@ -34,11 +34,11 @@ export default function Home() {
 		} else if (studyInView) {
 			setElementInView('study');
 		} else {
-			if (scrollY < 380) {
+			if (scrollY < 420) {
 				setElementInView('');
 			}
 		}
-	}, [aboutInView, projectsInView, studyInView, scrollY]);
+	}, [aboutInView, projectsInView, studyInView]);
 
 	return (
 		<main className='px-4'>
