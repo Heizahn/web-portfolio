@@ -42,7 +42,7 @@ export default function Navbar() {
 
 		inView('#about', (e) => {
 			let positionY = e.boundingClientRect.y;
-			if (positionY < 40.0) {
+			if (positionY < 45.0) {
 				setInViewStudy(false);
 				setInViewProjects(false);
 				setInViewAbout(true);
