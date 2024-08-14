@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import './globals.css';
 import ParticlesBack from '@/components/particles/ParticlesBack';
 
-const inter = Inter({ subsets: ['latin'] });
+const roboto = Roboto({
+	weight: ['100', '300', '400', '500', '700'],
+	subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
 	title: 'Portafolio - Humberto Bracho',
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='es' className='!scroll-smooth'>
-			<body className={inter.className}>
+			<body className={roboto.className}>
 				<ParticlesBack />
 				{children}
 			</body>
