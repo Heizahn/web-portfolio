@@ -13,13 +13,13 @@ export default function Home() {
 
 			<Navbar />
 
-			<section id='study'>
+			<section id='study' className='mb-10'>
 				<SectionStudy />
 			</section>
-			<section id='projects'>
+			<section id='projects' className='mb-10'>
 				<SectionProjects />
 			</section>
-			<section id='about' className='pt-20 h-screen flex flex-col justify-between'>
+			<section id='about' className='pt-16 h-screen flex flex-col justify-between'>
 				<div>
 					<SectionAbout />
 				</div>
