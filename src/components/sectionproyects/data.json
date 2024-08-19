@@ -1,0 +1,28 @@
+[
+	{
+		"id": 1,
+		"title": "Rest Country API",
+		"description": "Aplicación web que muestra información de todos los países del mundo, permite buscar por nombre y capital, además de filtrar por continentes. También se puede ver información detallada de cada país, como las lenguas oficiales, moneda, entre otros datos.",
+		"techs": ["Next.js", "Tailwind CSS"],
+		"code": "https://github.com/heizahn/rest-country-api",
+		"image": "/imgP1/rca.jpg",
+		"view": "https://rest-country-api-kappa.vercel.app/"
+	},
+	{
+		"id": 2,
+		"title": "CRUD de Turnos",
+		"description": "Aplicación web para la gestión de turnos, Permite crear y actualizar los turnos. Ademas de un registro de usuario para que pueda acceder a la aplicación.",
+		"techs": [
+			"React-Router-Dom",
+			"Redux-Toolkit",
+			"Formik",
+			"Express.js",
+			"Typescript",
+			"PostgreSQL",
+			"TypeORM"
+		],
+		"code": "https://github.com/Heizahn/project-m3-henry",
+		"image": "/imgP1/05.png",
+		"view": ""
+	}
+]
