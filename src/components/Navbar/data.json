@@ -1,0 +1,14 @@
+{
+	"es": {
+		"study": "Estudios",
+		"projects": "Proyectos",
+		"about": "Sobre mi",
+		"contact": "Contácteme"
+	},
+	"en": {
+		"study": "Studies",
+		"projects": "Projects",
+		"about": "About me",
+		"contact": "Contact me"
+	}
+}

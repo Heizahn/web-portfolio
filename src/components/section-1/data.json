@@ -1,0 +1,12 @@
+{
+	"es": {
+		"title": "Hola, soy Humberto",
+		"description": "Soy un desarrollador web con más de 1 año de aprendizaje y constante crecimiento. Me especializo en el desarrollo de aplicaciones web y móviles, utilizando tecnologías como React, Next-js, React-Native, Express, PostgreSQL, Typescript, entre otras.",
+		"contact": "Contácteme"
+	},
+	"en": {
+		"title": "Hello, I'm Humberto",
+		"description": "I'm a web developer with more than 1 year of learning and constant growth. I specialize in the development of web and mobile applications, using technologies such as React, Next-js, React-Native, Express, PostgreSQL, Typescript, among others.",
+		"contact": "Contact me"
+	}
+}

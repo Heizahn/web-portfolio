@@ -1,0 +1,74 @@
+{
+	"es": {
+		"title": "Material de Henry",
+		"projects": [
+			{
+				"title": "Modulo 1 y 2",
+				"mode": "En linea",
+				"date": "Feb-Abr 2024",
+				"description": [
+					"Aprendimos sobre la estructura de un pagina web, utilizando las tecnologías bases y fundamentales para la construcción de una sitio web, HTML, CSS, JS, y la creación de un servidor con express y mongodb."
+				],
+				"githubLink": "https://github.com/Heizahn/project-m2-henry",
+				"githubText": "Ver Repositorio"
+			},
+			{
+				"title": "Modulo 3",
+				"mode": "En linea",
+				"date": "May-Jun 2024",
+				"description": [
+					"En este modulo aprendimos a utilizar React, Redux, Router-Dom, Formik para crear una app Front-End, y a crear una API REST con Node.js y Express. Typescript para tipar nuestro código y TypeORM para manejar nuestra base de datos en PostgreSQL.",
+					"Además, aprendimos a utilizar herramientas de desarrollo como Webpack, Babel, ESLint, y Prettier."
+				],
+				"githubLink": "https://github.com/Heizahn/project-m3-henry",
+				"githubText": "Ver Repositorio"
+			},
+			{
+				"title": "Modulo 4",
+				"mode": "En linea",
+				"date": "Jul-Actualmente",
+				"description": [
+					"En este modulo aprendimos a utilizar Next js para crear una E-Commerce, utilizando Tailwind CSS para el estilo y usamos el api Context de React para el manejo del estado de la aplicación."
+				],
+				"githubLink": "",
+				"githubText": "En Proceso"
+			}
+		]
+	},
+	"en": {
+		"title": "Henry's Material",
+		"projects": [
+			{
+				"title": "Module 1 and 2",
+				"mode": "Online",
+				"date": "Feb-Apr 2024",
+				"description": [
+					"We learned about the structure of a web page, using the basic and fundamental technologies for the construction of a website, HTML, CSS, JS, and the creation of a server with express and mongodb."
+				],
+				"githubLink": "https://github.com/Heizahn/project-m2-henry",
+				"githubText": "View Repository"
+			},
+			{
+				"title": "Module 3",
+				"mode": "Online",
+				"date": "May-Jun 2024",
+				"description": [
+					"In this module we learned to use React, Redux, Router-Dom, Formik to create a Front-End app, and to create a REST API with Node.js and Express. Typescript to type our code and TypeORM to handle our database in PostgreSQL.",
+					"We also learned to use development tools such as Webpack, Babel, ESLint, and Prettier."
+				],
+				"githubLink": "https://github.com/Heizahn/project-m3-henry",
+				"githubText": "View Repository"
+			},
+			{
+				"title": "Module 4",
+				"mode": "Online",
+				"date": "Jul-Currently",
+				"description": [
+					"In this module we learned to use Next js to create an E-Commerce, using Tailwind CSS for the style and we used the Context api of React to manage the state of the application."
+				],
+				"githubLink": "",
+				"githubText": "In Process"
+			}
+		]
+	}
+}

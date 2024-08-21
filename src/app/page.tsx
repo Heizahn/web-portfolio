@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer/Footer';
+import Lang from '@/components/lang/lang';
 import Navbar from '@/components/Navbar/Navbar';
 
 import SectionOne from '@/components/section-1/sectionOne';
@@ -9,6 +10,7 @@ import SectionStudy from '@/components/sectionStudy/SectionStudy';
 export default function Home() {
 	return (
 		<main className='px-4'>
+			<Lang />
 			<SectionOne />
 
 			<Navbar />

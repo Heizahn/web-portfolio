@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import ParticlesBack from '@/components/particles/ParticlesBack';
+import { LangContextProvider } from '@/components/context/lang-context';
 
 const roboto = Roboto({
 	weight: ['100', '300', '400', '500', '700'],
@@ -22,7 +23,7 @@ export default function RootLayout({
 		<html lang='es' className='scroll-smooth'>
 			<body className={roboto.className}>
 				<ParticlesBack />
-				{children}
+				<LangContextProvider>{children}</LangContextProvider>
 			</body>
 		</html>
 	);

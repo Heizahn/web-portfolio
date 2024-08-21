@@ -1,0 +1,42 @@
+{
+	"es": {
+		"title": "Sobre mi",
+		"about": {
+			"p1": "Hola, soy Heizahn, un desarrollador web Full Stack. Me apasiona la tecnología y la programación, siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.",
+			"p2": "Actualmente estoy trabajando en proyectos personales y buscando oportunidades laborales para seguir creciendo profesionalmente.",
+			"p3": "Mis habilidades principales son:",
+			"skills": [
+				"Desarrollo de aplicaciones web",
+				"Desarrollo de aplicaciones mobile",
+				"Programación orientada a objetos",
+				"Base de datos relacionales"
+			],
+			"p4": "Algunas de mis habilidades blandas son:",
+			"softSkills": [
+				"Trabajo en equipo",
+				"Comunicación efectiva",
+				"Resolución de problemas",
+				"Adaptabilidad",
+				"Autodidacta"
+			],
+			"p5": "Si tienes un proyecto en mente o quieres saber más sobre mí, no dudes en contactarme."
+		}
+	},
+	"en": {
+		"title": "About me",
+		"about": {
+			"p1": "Hi, I'm Heizahn, a Full Stack web developer. I am passionate about technology and programming, I am always looking to learn new technologies and improve my skills.",
+			"p2": "I am currently working on personal projects and looking for job opportunities to continue growing professionally.",
+			"p3": "My main skills are:",
+			"skills": [
+				"Web application development",
+				"Mobile application development",
+				"Object-oriented programming",
+				"Relational databases"
+			],
+			"p4": "Some of my soft skills are:",
+			"softSkills": ["Teamwork", "Effective communication", "Problem solving", "Adaptability", "Self-taught"],
+			"p5": "If you have a project in mind or want to know more about me, do not hesitate to contact me."
+		}
+	}
+}

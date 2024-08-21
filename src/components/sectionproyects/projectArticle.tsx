@@ -1,4 +1,3 @@
-import { PM3 } from '@/env/env';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,14 +10,7 @@ interface ProjectArticleProps {
 	view?: string;
 }
 
-export default function ProjectArticle({
-	title,
-	description,
-	techs,
-	code,
-	image,
-	view,
-}: ProjectArticleProps) {
+export default function ProjectArticle({ title, description, techs, code, image, view }: ProjectArticleProps) {
 	return (
 		<article className='flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0'>
 			<div className='w-full md:w-1/2'>
@@ -37,10 +29,7 @@ export default function ProjectArticle({
 				<div className='flex flex-wrap mt-2'>
 					<ul className='flex flex-row mb-2 gap-x-2 flex-wrap'>
 						{techs.map((tech, index) => (
-							<li
-								key={index}
-								className='flex mt-2 px-4 py-1 items-center rounded-xl text-sm  bg-purple-950 text-white'
-							>
+							<li key={index} className='flex mt-2 px-4 py-1 items-center rounded-xl text-sm  bg-purple-950 text-white'>
 								{tech}
 							</li>
 						))}

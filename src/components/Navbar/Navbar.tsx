@@ -5,12 +5,15 @@ import Link from 'next/link';
 import { MdEmail } from 'react-icons/md';
 import { inView, useMotionValueEvent, useScroll } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import data from './data.json';
+import useLang from '../hooks/useLang';
 
 export default function Navbar() {
 	const [scrollY, setScrollY] = useState(0);
 	const [inViewStudy, setInViewStudy] = useState(false);
 	const [inViewProjects, setInViewProjects] = useState(false);
 	const [inViewAbout, setInViewAbout] = useState(false);
+	const { lang } = useLang();
 
 	useMotionValueEvent(useScroll().scrollY, 'change', (latest) => {
 		setScrollY(latest);
@@ -56,8 +59,7 @@ export default function Navbar() {
 		<header className={`sticky top-[-1px] z-10 w-full`}>
 			<div
 				className={`w-full mx-auto container lg:max-w-4xl md:max-w-2xl ${
-					(inViewStudy || inViewProjects || inViewAbout) &&
-					'transition duration-300 bg-[rgb(5,5,5)] rounded-lg'
+					(inViewStudy || inViewProjects || inViewAbout) && 'transition duration-300 bg-[rgb(5,5,5)] rounded-lg'
 				} `}
 			>
 				<nav className='flex w-full mx-auto text-base md:text-lg font-semibold text-gray-200 justify-between items-center max-w-4xl  md:max-w-4xl'>
@@ -67,7 +69,7 @@ export default function Navbar() {
 							inViewStudy && 'transition duration-300 bg-purple-700 '
 						}`}
 					>
-						Estudios
+						{data[lang].study}
 					</Link>
 
 					<Link
@@ -76,7 +78,7 @@ export default function Navbar() {
 							inViewProjects && 'transition duration-300 bg-purple-700 '
 						}`}
 					>
-						Proyectos
+						{data[lang].projects}
 					</Link>
 
 					<Link
@@ -85,15 +87,12 @@ export default function Navbar() {
 							inViewAbout && 'transition duration-300 bg-purple-700 '
 						}`}
 					>
-						Sobre mi
+						{data[lang].about}
 					</Link>
 
-					<a
-						href={MAILTO}
-						className='text-2xl md:flex items-center gap-2 px-2 py-1 md:px-4 md:py-2'
-					>
+					<a href={MAILTO} className='text-2xl md:flex items-center gap-2 px-2 py-1 md:px-4 md:py-2'>
 						<MdEmail />
-						<span className='hidden md:block md:text-lg'>Contácteme</span>
+						<span className='hidden md:block md:text-lg'>{data[lang].contact}</span>
 					</a>
 				</nav>
 			</div>
