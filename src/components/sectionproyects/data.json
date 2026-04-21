@@ -1,48 +1,67 @@
 {
 	"es": {
 		"title": "Proyectos",
+		"subtitle": "Una selección de lo que he construido. Cada uno resolvió un problema real — no son demos.",
+		"labels": {
+			"code": "Código",
+			"view": "Ver en vivo",
+			"featured": "Destacado"
+		},
 		"projects": [
 			{
 				"id": 1,
-				"title": "CRUD de Turnos",
-				"description": "Aplicación web para la gestión de turnos, Permite crear y actualizar los turnos. Ademas de un registro de usuario para que pueda acceder a la aplicación.",
-				"techs": ["React-Router-Dom", "Redux-Toolkit", "Formik", "Express.js", "Typescript", "PostgreSQL", "TypeORM"],
-				"code": "https://github.com/Heizahn/project-m3-henry",
-				"image": "/imgP1/05.png",
-				"view": ""
+				"title": "Rest Country API",
+				"summary": "Explorador de países con búsqueda, filtros por continente y detalle completo por país.",
+				"description": "Aplicación web que consume la Rest Countries API para mostrar datos de todos los países del mundo. Incluye búsqueda por nombre o capital, filtros por región, modo claro/oscuro persistente y vista detallada con idiomas oficiales, moneda, vecinos y más.",
+				"techs": ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
+				"code": "https://github.com/heizahn/rest-country-api",
+				"image": "/imgP1/rca.jpg",
+				"view": "https://rest-country-api-kappa.vercel.app/",
+				"featured": true
 			},
 			{
 				"id": 2,
-				"title": "Rest Country API",
-				"description": "Aplicación web que muestra información de todos los países del mundo, permite buscar por nombre y capital, además de filtrar por continentes. También se puede ver información detallada de cada país, como las lenguas oficiales, moneda, entre otros datos.",
-				"techs": ["Next.js", "Tailwind CSS"],
-				"code": "https://github.com/heizahn/rest-country-api",
-				"image": "/imgP1/rca.jpg",
-				"view": "https://rest-country-api-kappa.vercel.app/"
+				"title": "CRUD de Turnos",
+				"summary": "Sistema full-stack de gestión de turnos con autenticación y panel por usuario.",
+				"description": "Aplicación full-stack para gestión de turnos médicos. Incluye registro/login con autenticación, creación y cancelación de turnos, historial por usuario y validaciones a nivel de formulario y servidor. API REST tipada con TypeScript y persistencia en PostgreSQL vía TypeORM.",
+				"techs": ["React", "Redux Toolkit", "Formik", "Express.js", "TypeScript", "PostgreSQL", "TypeORM"],
+				"code": "https://github.com/Heizahn/project-m3-henry",
+				"image": "/imgP1/05.png",
+				"view": "",
+				"featured": false
 			}
 		]
 	},
-
 	"en": {
 		"title": "Projects",
+		"subtitle": "A selection of what I've built. Each one solved a real problem — these aren't demos.",
+		"labels": {
+			"code": "Code",
+			"view": "Live demo",
+			"featured": "Featured"
+		},
 		"projects": [
 			{
 				"id": 1,
-				"title": "CRUD Shifts",
-				"description": "Web application for shift management, Allows you to create and update shifts. In addition to a user registration so that you can access the application.",
-				"techs": ["React-Router-Dom", "Redux-Toolkit", "Formik", "Express.js", "Typescript", "PostgreSQL", "TypeORM"],
-				"code": "https://github.com/Heizahn/project-m3-henry",
-				"image": "/imgP1/05.png",
-				"view": ""
+				"title": "Rest Country API",
+				"summary": "Country explorer with search, region filters and full per-country detail.",
+				"description": "Web app that consumes the Rest Countries API to show data for every country in the world. Includes search by name or capital, region filters, persistent light/dark mode, and a detailed view with official languages, currency, neighbors and more.",
+				"techs": ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
+				"code": "https://github.com/heizahn/rest-country-api",
+				"image": "/imgP1/rca.jpg",
+				"view": "https://rest-country-api-kappa.vercel.app/",
+				"featured": true
 			},
 			{
 				"id": 2,
-				"title": "Rest Country API",
-				"description": "Web application that shows information about all the countries in the world, allows you to search by name and capital, in addition to filtering by continents. You can also see detailed information about each country, such as official languages, currency, among other data.",
-				"techs": ["Next.js", "Tailwind CSS"],
-				"code": "https://github.com/heizahn/rest-country-api",
-				"image": "/imgP1/rca.jpg",
-				"view": "https://rest-country-api-kappa.vercel.app/"
+				"title": "Appointment CRUD",
+				"summary": "Full-stack appointment system with authentication and per-user dashboard.",
+				"description": "Full-stack application for medical appointment management. Includes sign-up/login with authentication, appointment creation and cancellation, per-user history, and validation at both form and server level. REST API typed with TypeScript and persistence on PostgreSQL via TypeORM.",
+				"techs": ["React", "Redux Toolkit", "Formik", "Express.js", "TypeScript", "PostgreSQL", "TypeORM"],
+				"code": "https://github.com/Heizahn/project-m3-henry",
+				"image": "/imgP1/05.png",
+				"view": "",
+				"featured": false
 			}
 		]
 	}

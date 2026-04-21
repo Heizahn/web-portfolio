@@ -1,6 +1,5 @@
 'use client';
-import { useRouter } from 'next/router';
-import { createContext, useState, useContext, ReactNode, useEffect } from 'react';
+import { createContext, useState, ReactNode, useEffect } from 'react';
 
 export type Lang = 'en' | 'es';
 

@@ -1,12 +1,30 @@
 {
 	"es": {
-		"title": "Hola, soy Humberto",
-		"description": "Full Stack Developer con más de 2 años de aprendizaje y constante crecimiento especialmente en el bootcamp de Soy Henry, que me ayudaron a trabajar en equipo, desarrollar una mentalidad más crítica y productiva. Conocimientos en metodologías ágiles, GIT, SCRUM, Comunicativo. Experiencia en  desarrollo de Front End y Back End arquitectura de software  con Next.js Express con TypeScript. Con un  Nivel de Inglés: A2 - Básico.",
-		"contact": "Contácteme"
+		"greeting": "hola, mundo",
+		"title": "Convierto ideas en productos web que funcionan.",
+		"description": "Soy <strong>Humberto Bracho</strong>, desarrollador Full Stack. Construyo interfaces rápidas con <strong>React / Next.js</strong> y backends sólidos en <strong>Node.js / Bun</strong> y <strong>Rust</strong>. Más de 2 años enfocado en código limpio, UX pulida y performance medible.",
+		"roles": [
+			"Frontend con React & Next.js",
+			"Backend con Node.js & Bun",
+			"Sistemas con Rust",
+			"APIs & bases de datos",
+			"Interfaces con performance medible"
+		],
+		"contact": "Hablemos",
+		"scrollHint": "Desplázate"
 	},
 	"en": {
-		"title": "Hello, I'm Humberto",
-		"description": "Full Stack Developer with more than 2 years of learning and constant growth, especially in the Soy Henry bootcamp, which helped me work as a team and develop a more critical and productive mindset. Knowledge of agile methodologies, GIT, SCRUM, Communicative. Experience in developing Front End and Back End software architecture with Next.js Express with TypeScript. With an English Level: A2 - Basic.",
-		"contact": "Contact me"
+		"greeting": "hello, world",
+		"title": "I turn ideas into web products that ship.",
+		"description": "I'm <strong>Humberto Bracho</strong>, a Full Stack developer. I craft fast interfaces with <strong>React / Next.js</strong> and solid backends in <strong>Node.js / Bun</strong> and <strong>Rust</strong>. 2+ years focused on clean code, polished UX, and measurable performance.",
+		"roles": [
+			"Frontend with React & Next.js",
+			"Backend with Node.js & Bun",
+			"Systems with Rust",
+			"APIs & databases",
+			"Interfaces with measurable perf"
+		],
+		"contact": "Let's talk",
+		"scrollHint": "Scroll"
 	}
 }

@@ -1,42 +1,50 @@
 {
 	"es": {
-		"title": "Sobre mi",
+		"title": "Sobre mí",
 		"about": {
-			"p1": "Hola, soy Heizahn, un desarrollador web Full Stack. Me apasiona la tecnología y la programación, siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.",
-			"p2": "Actualmente estoy trabajando en proyectos personales y buscando oportunidades laborales para seguir creciendo profesionalmente.",
-			"p3": "Mis habilidades principales son:",
+			"p1": "Soy desarrollador Full Stack enfocado en interfaces modernas y backends eficientes. Me obsesiona la claridad del código, la performance real y la experiencia del usuario final — no el hype de las tecnologías de moda.",
+			"p2": "Actualmente disponible para proyectos freelance y oportunidades remotas donde pueda aportar valor desde el primer commit. Si buscas a alguien que aprenda rápido, comunique claro y entregue sin vueltas, hablemos.",
+			"p3": "Lo que domino:",
 			"skills": [
-				"Desarrollo de aplicaciones web",
-				"Desarrollo de aplicaciones mobile",
-				"Programación orientada a objetos",
-				"Base de datos relacionales"
+				"React y Next.js con TypeScript",
+				"Node.js, Bun y APIs REST",
+				"Rust para CLIs y sistemas",
+				"PostgreSQL y ORMs modernos",
+				"Testing, Git flow y CI/CD"
 			],
-			"p4": "Algunas de mis habilidades blandas son:",
+			"p4": "Cómo trabajo:",
 			"softSkills": [
-				"Trabajo en equipo",
-				"Comunicación efectiva",
+				"Comunicación directa y honesta",
 				"Resolución de problemas",
-				"Adaptabilidad",
-				"Autodidacta"
+				"Mentalidad de producto",
+				"Autogestión y disciplina",
+				"Aprendizaje continuo"
 			],
-			"p5": "Si tienes un proyecto en mente o quieres saber más sobre mí, no dudes en contactarme."
+			"p5": "Si tienes un proyecto en mente o un problema técnico que resolver, escríbeme."
 		}
 	},
 	"en": {
 		"title": "About me",
 		"about": {
-			"p1": "Hi, I'm Heizahn, a Full Stack web developer. I am passionate about technology and programming, I am always looking to learn new technologies and improve my skills.",
-			"p2": "I am currently working on personal projects and looking for job opportunities to continue growing professionally.",
-			"p3": "My main skills are:",
+			"p1": "I'm a Full Stack developer focused on modern interfaces and efficient backends. I obsess over code clarity, real-world performance, and the end-user experience — not hype-driven tech.",
+			"p2": "Currently available for freelance projects and remote opportunities where I can deliver value from the first commit. If you're looking for someone who learns fast, communicates clearly, and ships without drama, let's talk.",
+			"p3": "What I do well:",
 			"skills": [
-				"Web application development",
-				"Mobile application development",
-				"Object-oriented programming",
-				"Relational databases"
+				"React and Next.js with TypeScript",
+				"Node.js, Bun and REST APIs",
+				"Rust for CLIs and systems",
+				"PostgreSQL and modern ORMs",
+				"Testing, Git flow and CI/CD"
 			],
-			"p4": "Some of my soft skills are:",
-			"softSkills": ["Teamwork", "Effective communication", "Problem solving", "Adaptability", "Self-taught"],
-			"p5": "If you have a project in mind or want to know more about me, do not hesitate to contact me."
+			"p4": "How I work:",
+			"softSkills": [
+				"Direct, honest communication",
+				"Problem solving",
+				"Product mindset",
+				"Self-management and discipline",
+				"Continuous learning"
+			],
+			"p5": "If you have a project in mind or a technical problem to solve, drop me a line."
 		}
 	}
 }

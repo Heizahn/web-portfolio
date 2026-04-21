@@ -1,6 +1,6 @@
 {
 	"es": {
-		"title": "Material de Henry",
+		"title": "Trayectoria",
 		"projects": [
 			{
 				"title": "Modulo 1 y 2",
@@ -26,17 +26,17 @@
 			{
 				"title": "Modulo 4",
 				"mode": "En linea",
-				"date": "Jul-Actualmente",
+				"date": "Jul-Oct 2024",
 				"description": [
 					"En este modulo aprendimos a utilizar Next js para crear una E-Commerce, utilizando Tailwind CSS para el estilo y usamos el api Context de React para el manejo del estado de la aplicación."
 				],
 				"githubLink": "",
-				"githubText": "En Proceso"
+				"githubText": "Completado"
 			}
 		]
 	},
 	"en": {
-		"title": "Henry's Material",
+		"title": "Journey",
 		"projects": [
 			{
 				"title": "Module 1 and 2",
@@ -62,12 +62,12 @@
 			{
 				"title": "Module 4",
 				"mode": "Online",
-				"date": "Jul-Currently",
+				"date": "Jul-Oct 2024",
 				"description": [
 					"In this module we learned to use Next js to create an E-Commerce, using Tailwind CSS for the style and we used the Context api of React to manage the state of the application."
 				],
 				"githubLink": "",
-				"githubText": "In Process"
+				"githubText": "Completed"
 			}
 		]
 	}

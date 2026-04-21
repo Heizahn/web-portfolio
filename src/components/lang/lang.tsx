@@ -2,50 +2,94 @@
 
 import type { Lang } from '@/components/context/lang-context';
 import useLang from '../hooks/useLang';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FlagGB, FlagVE } from '../icons/flags';
+import { FiChevronDown } from 'react-icons/fi';
 
 const optionsLangs = [
-	{
-		lang: 'es',
-		icon: '🇻🇪',
-	},
-	{
-		lang: 'en',
-		icon: '🇬🇧',
-	},
+	{ lang: 'es' as const, label: 'Español', Flag: FlagVE },
+	{ lang: 'en' as const, label: 'English', Flag: FlagGB },
 ];
 
 export default function Lang() {
 	const { lang, setLang } = useLang();
-	const [showOptions, setShowOptions] = useState(false);
+	const [open, setOpen] = useState(false);
+	const ref = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		if (!open) return;
+		const onClick = (e: MouseEvent) => {
+			if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+		};
+		const onKey = (e: KeyboardEvent) => {
+			if (e.key === 'Escape') setOpen(false);
+		};
+		document.addEventListener('mousedown', onClick);
+		document.addEventListener('keydown', onKey);
+		return () => {
+			document.removeEventListener('mousedown', onClick);
+			document.removeEventListener('keydown', onKey);
+		};
+	}, [open]);
+
+	const current = optionsLangs.find((o) => o.lang === lang) ?? optionsLangs[0];
+	const CurrentFlag = current.Flag;
 
 	return (
-		<div className='block md:fixed md:top-0 md:left-20 z-50 w-auto'>
-			<button className='text-4xl z-50' onClick={() => setShowOptions(!showOptions)}>
-				<span>{optionsLangs.find((option) => option.lang === lang)?.icon}</span>
-				<motion.div
-					className='absolute z-10 flex text-2xl flex-col gap-y-2 p-1 bg-gray-800/90 rounded-b-lg'
-					initial={{ scale: 0, y: -50, x: -50, opacity: 0 }}
-					animate={
-						showOptions
-							? { scale: 1, y: 0, x: 0, opacity: 1, transition: { delay: 0.1, duration: 0.3 } }
-							: { scale: 0, y: -50, x: -50, opacity: 0, transition: { delay: 0.1, duration: 0.3 } }
-					}
-				>
-					{optionsLangs.map((option) => (
-						<a
-							key={option.lang}
-							onClick={() => setLang(option.lang as Lang)}
-							className={`flex justify-center items-center gap-x-2 p-2 rounded-md hover:bg-gray-600 ${
-								option.lang === lang ? 'bg-gray-600' : ''
-							}`}
-						>
-							{option.icon} <span>{option.lang.toUpperCase()}</span>
-						</a>
-					))}
-				</motion.div>
+		<div ref={ref} className='fixed top-4 left-4 md:top-3 md:left-6 z-50'>
+			<button
+				type='button'
+				onClick={() => setOpen(!open)}
+				aria-haspopup='listbox'
+				aria-expanded={open}
+				aria-label={`Idioma: ${current.label}`}
+				className='inline-flex items-center gap-2 h-10 px-3 rounded-full glass-sm text-ink text-sm font-medium transition hover:scale-[1.03] hover:shadow-glow'
+			>
+				<CurrentFlag className='w-5 h-auto rounded-sm ring-1 ring-border' />
+				<span className='uppercase tracking-wide'>{lang}</span>
+				<FiChevronDown
+					className={`transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+				/>
 			</button>
+
+			<AnimatePresence>
+				{open && (
+					<motion.ul
+						role='listbox'
+						initial={{ opacity: 0, y: -8, scale: 0.96 }}
+						animate={{ opacity: 1, y: 0, scale: 1 }}
+						exit={{ opacity: 0, y: -8, scale: 0.96 }}
+						transition={{ duration: 0.18 }}
+						className='absolute mt-2 left-0 min-w-[150px] glass rounded-xl p-1 overflow-hidden'
+					>
+						{optionsLangs.map(({ lang: code, label, Flag }) => {
+							const active = code === lang;
+							return (
+								<li key={code}>
+									<button
+										type='button'
+										role='option'
+										aria-selected={active}
+										onClick={() => {
+											setLang(code as Lang);
+											setOpen(false);
+										}}
+										className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-ink transition ${
+											active
+												? 'bg-gradient-to-r from-brand-500/20 to-accent-500/20 font-semibold'
+												: 'hover:bg-surface-muted'
+										}`}
+									>
+										<Flag className='w-5 h-auto rounded-sm ring-1 ring-border' />
+										<span>{label}</span>
+									</button>
+								</li>
+							);
+						})}
+					</motion.ul>
+				)}
+			</AnimatePresence>
 		</div>
 	);
 }

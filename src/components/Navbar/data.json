@@ -1,14 +1,16 @@
 {
 	"es": {
 		"study": "Estudios",
+		"github": "GitHub",
 		"projects": "Proyectos",
-		"about": "Sobre mi",
-		"contact": "Contácteme"
+		"about": "Sobre mí",
+		"contact": "Contacto"
 	},
 	"en": {
 		"study": "Studies",
+		"github": "GitHub",
 		"projects": "Projects",
-		"about": "About me",
-		"contact": "Contact me"
+		"about": "About",
+		"contact": "Contact"
 	}
 }

@@ -2,25 +2,187 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	:root {
+		/* Light theme tokens */
+		--surface: 248 250 252; /* slate-50 */
+		--surface-muted: 241 245 249; /* slate-100 */
+		--surface-elevated: 255 255 255;
 
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 5, 5, 5;
-  }
+		--ink: 15 23 42; /* slate-900 */
+		--ink-muted: 51 65 85; /* slate-700 */
+		--ink-faint: 100 116 139; /* slate-500 */
 
+		--border: 226 232 240; /* slate-200 */
+		--border-strong: 203 213 225; /* slate-300 */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+		--grad-from: 99 102 241; /* indigo-500 */
+		--grad-to: 168 85 247; /* purple-500 */
+
+		--shadow: 15 23 42; /* slate-900 */
+
+		/* Glass */
+		--glass-bg: 255 255 255;
+		--glass-bg-opacity: 0.6;
+		--glass-border: 255 255 255;
+		--glass-border-opacity: 0.4;
+	}
+
+	.dark {
+		/* Dark theme tokens */
+		--surface: 8 8 15;
+		--surface-muted: 17 17 28;
+		--surface-elevated: 24 24 38;
+
+		--ink: 248 250 252;
+		--ink-muted: 203 213 225;
+		--ink-faint: 148 163 184;
+
+		--border: 39 39 60;
+		--border-strong: 71 71 95;
+
+		--grad-from: 129 140 248; /* indigo-400 */
+		--grad-to: 192 132 252; /* purple-400 */
+
+		--shadow: 0 0 0;
+
+		--glass-bg: 24 24 38;
+		--glass-bg-opacity: 0.5;
+		--glass-border: 148 163 184;
+		--glass-border-opacity: 0.15;
+	}
+
+	* {
+		border-color: rgb(var(--border));
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		color: rgb(var(--ink));
+		background-color: rgb(var(--surface));
+		background-image:
+			radial-gradient(at 20% 10%, rgb(var(--grad-from) / 0.18) 0px, transparent 50%),
+			radial-gradient(at 80% 90%, rgb(var(--grad-to) / 0.18) 0px, transparent 55%);
+		background-attachment: fixed;
+		min-height: 100vh;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+
+	::selection {
+		background-color: rgb(var(--grad-to) / 0.3);
+		color: rgb(var(--ink));
+	}
+
+	a:hover {
+		cursor: pointer;
+	}
+
+	/* Focus ring */
+	:focus-visible {
+		outline: 2px solid rgb(var(--grad-to));
+		outline-offset: 2px;
+		border-radius: 4px;
+	}
+
+	/* Scrollbar */
+	::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+	::-webkit-scrollbar-track {
+		background: rgb(var(--surface-muted));
+	}
+	::-webkit-scrollbar-thumb {
+		background: linear-gradient(180deg, rgb(var(--grad-from)), rgb(var(--grad-to)));
+		border-radius: 10px;
+		border: 2px solid rgb(var(--surface-muted));
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: linear-gradient(180deg, rgb(var(--grad-to)), rgb(var(--grad-from)));
+	}
 }
 
-a:hover{
-  cursor: pointer;
+@layer components {
+	.glass {
+		background-color: rgb(var(--glass-bg) / var(--glass-bg-opacity));
+		backdrop-filter: blur(16px) saturate(180%);
+		-webkit-backdrop-filter: blur(16px) saturate(180%);
+		border: 1px solid rgb(var(--glass-border) / var(--glass-border-opacity));
+		box-shadow: 0 8px 32px 0 rgb(var(--shadow) / 0.2);
+	}
+
+	.glass-sm {
+		background-color: rgb(var(--glass-bg) / calc(var(--glass-bg-opacity) - 0.1));
+		backdrop-filter: blur(10px) saturate(150%);
+		-webkit-backdrop-filter: blur(10px) saturate(150%);
+		border: 1px solid rgb(var(--glass-border) / var(--glass-border-opacity));
+	}
+
+	.text-gradient {
+		background: linear-gradient(135deg, rgb(var(--grad-from)), rgb(var(--grad-to)));
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+	}
+
+	.border-gradient {
+		position: relative;
+		background: rgb(var(--surface-elevated));
+		background-clip: padding-box;
+		border: 1px solid transparent;
+	}
+	.border-gradient::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		margin: -1px;
+		border-radius: inherit;
+		background: linear-gradient(135deg, rgb(var(--grad-from)), rgb(var(--grad-to)));
+	}
+
+	.btn-primary {
+		@apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 font-medium text-white shadow-glow transition-all duration-300 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98];
+		background: linear-gradient(135deg, rgb(var(--grad-from)), rgb(var(--grad-to)));
+		background-size: 200% 200%;
+	}
+	.btn-primary:hover {
+		animation: gradient-x 3s ease infinite;
+	}
+
+	.btn-ghost {
+		@apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 font-medium text-ink transition-all duration-300 hover:bg-surface-muted active:scale-[0.98];
+	}
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
+	.text-pretty {
+		text-wrap: pretty;
+	}
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
 }
 
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

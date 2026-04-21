@@ -1,4 +1,74 @@
 {
-	"es": "Disponible para trabajar.",
-	"en": "Available for work."
+	"es": {
+		"title": "Hablemos",
+		"subtitle": "¿Tienes un proyecto en mente o una idea que quieres llevar a producción? Escríbeme — respondo rápido.",
+		"availability": "Abierto a nuevos proyectos",
+		"channels": {
+			"email": {
+				"label": "Email",
+				"description": "La forma más directa"
+			},
+			"linkedin": {
+				"label": "LinkedIn",
+				"description": "Perfil profesional"
+			},
+			"github": {
+				"label": "GitHub",
+				"description": "Código y contribuciones"
+			}
+		},
+		"form": {
+			"title": "O envíame un mensaje",
+			"name": "Tu nombre",
+			"namePlaceholder": "Ej. María Pérez",
+			"email": "Tu email",
+			"emailPlaceholder": "tu@correo.com",
+			"message": "Mensaje",
+			"messagePlaceholder": "Cuéntame sobre el proyecto, el rol, el stack o lo que necesites resolver…",
+			"submit": "Enviar mensaje",
+			"sending": "Abriendo tu correo…",
+			"success": "¡Listo! Abrí tu cliente de correo con el mensaje precargado.",
+			"errors": {
+				"name": "Ingresa tu nombre",
+				"email": "Ingresa un email válido",
+				"message": "El mensaje debe tener al menos 10 caracteres"
+			}
+		}
+	},
+	"en": {
+		"title": "Let's talk",
+		"subtitle": "Got a project in mind or an idea you want to ship? Drop me a line — I reply quickly.",
+		"availability": "Open to new projects",
+		"channels": {
+			"email": {
+				"label": "Email",
+				"description": "The most direct way"
+			},
+			"linkedin": {
+				"label": "LinkedIn",
+				"description": "Professional profile"
+			},
+			"github": {
+				"label": "GitHub",
+				"description": "Code and contributions"
+			}
+		},
+		"form": {
+			"title": "Or send me a message",
+			"name": "Your name",
+			"namePlaceholder": "E.g. Mary Smith",
+			"email": "Your email",
+			"emailPlaceholder": "you@email.com",
+			"message": "Message",
+			"messagePlaceholder": "Tell me about the project, the role, the stack or what you need to solve…",
+			"submit": "Send message",
+			"sending": "Opening your mail client…",
+			"success": "Done! I opened your mail client with the message pre-filled.",
+			"errors": {
+				"name": "Enter your name",
+				"email": "Enter a valid email",
+				"message": "Message must be at least 10 characters"
+			}
+		}
+	}
 }

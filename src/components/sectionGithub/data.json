@@ -1,0 +1,46 @@
+{
+	"es": {
+		"title": "Actividad en GitHub",
+		"subtitle": "Mi código público, en vivo",
+		"stats": {
+			"repos": "Repositorios",
+			"followers": "Seguidores",
+			"stars": "Estrellas",
+			"forks": "Forks"
+		},
+		"languages": {
+			"title": "Lenguajes más usados",
+			"empty": "Sin datos de lenguajes"
+		},
+		"repos": {
+			"title": "Proyectos destacados",
+			"viewAll": "Ver todos en GitHub",
+			"updated": "Actualizado",
+			"noRepos": "No hay repositorios disponibles"
+		},
+		"error": "No se pudieron cargar los datos de GitHub en este momento.",
+		"joined": "Se unió en"
+	},
+	"en": {
+		"title": "GitHub Activity",
+		"subtitle": "My public code, live",
+		"stats": {
+			"repos": "Repositories",
+			"followers": "Followers",
+			"stars": "Stars",
+			"forks": "Forks"
+		},
+		"languages": {
+			"title": "Top languages",
+			"empty": "No language data"
+		},
+		"repos": {
+			"title": "Featured projects",
+			"viewAll": "View all on GitHub",
+			"updated": "Updated",
+			"noRepos": "No repositories available"
+		},
+		"error": "Could not load GitHub data right now.",
+		"joined": "Joined on"
+	}
+}
