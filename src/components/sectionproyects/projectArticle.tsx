@@ -10,6 +10,8 @@ interface Labels {
 	code: string;
 	view: string;
 	featured: string;
+	client?: string;
+	viewSite?: string;
 }
 
 interface ProjectArticleProps {
@@ -21,6 +23,8 @@ interface ProjectArticleProps {
 	image?: string;
 	view?: string;
 	featured?: boolean;
+	client?: string;
+	clientUrl?: string;
 	index: number;
 	labels: Labels;
 }
@@ -34,6 +38,8 @@ export default function ProjectArticle({
 	image,
 	view,
 	featured,
+	client,
+	clientUrl,
 	index,
 	labels,
 }: ProjectArticleProps) {
@@ -99,6 +105,20 @@ export default function ProjectArticle({
 						{title}
 					</h3>
 
+					{client && clientUrl && labels.client && (
+						<p className='mt-2 text-xs text-ink-muted'>
+							{labels.client}:{' '}
+							<Link
+								href={clientUrl}
+								target='_blank'
+								rel='noopener noreferrer'
+								className='font-medium text-gradient hover:underline underline-offset-2'
+							>
+								{client} ↗
+							</Link>
+						</p>
+					)}
+
 					{summary && (
 						<p className='mt-2 text-sm md:text-base text-ink font-medium'>
 							{summary}
@@ -121,15 +141,17 @@ export default function ProjectArticle({
 					</ul>
 
 					<div className='flex flex-wrap gap-3 mt-6'>
-						<Link
-							href={code}
-							target='_blank'
-							rel='noopener noreferrer'
-							className='inline-flex items-center gap-2 px-4 py-2 rounded-xl glass-sm text-sm font-medium text-ink hover:scale-[1.03] hover:shadow-glow transition'
-						>
-							<FiGithub className='w-4 h-4' />
-							{labels.code}
-						</Link>
+						{code && (
+							<Link
+								href={code}
+								target='_blank'
+								rel='noopener noreferrer'
+								className='inline-flex items-center gap-2 px-4 py-2 rounded-xl glass-sm text-sm font-medium text-ink hover:scale-[1.03] hover:shadow-glow transition'
+							>
+								<FiGithub className='w-4 h-4' />
+								{labels.code}
+							</Link>
+						)}
 						{view && (
 							<Link
 								href={view}

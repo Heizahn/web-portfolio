@@ -43,6 +43,8 @@ export default function SectionProjects() {
 						image={project.image}
 						view={project.view}
 						featured={project.featured}
+						client={(project as { client?: string }).client}
+						clientUrl={(project as { clientUrl?: string }).clientUrl}
 						labels={t.labels}
 					/>
 				))}

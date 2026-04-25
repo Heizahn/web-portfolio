@@ -1,67 +1,157 @@
 {
 	"es": {
-		"title": "Proyectos",
-		"subtitle": "Una selección de lo que he construido. Cada uno resolvió un problema real — no son demos.",
+		"title": "Proyectos seleccionados",
+		"subtitle": "Trabajos recientes para clientes y proyectos personales.",
 		"labels": {
 			"code": "Código",
-			"view": "Ver en vivo",
-			"featured": "Destacado"
+			"view": "Ver demo",
+			"featured": "Destacado",
+			"client": "Cliente",
+			"viewSite": "Ver sitio"
 		},
 		"projects": [
 			{
 				"id": 1,
-				"title": "Rest Country API",
-				"summary": "Explorador de países con búsqueda, filtros por continente y detalle completo por país.",
-				"description": "Aplicación web que consume la Rest Countries API para mostrar datos de todos los países del mundo. Incluye búsqueda por nombre o capital, filtros por región, modo claro/oscuro persistente y vista detallada con idiomas oficiales, moneda, vecinos y más.",
-				"techs": ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
-				"code": "https://github.com/heizahn/rest-country-api",
-				"image": "/imgP1/rca.jpg",
-				"view": "https://rest-country-api-kappa.vercel.app/",
-				"featured": true
+				"title": "API ABDO",
+				"summary": "API REST de alto rendimiento para gestión de clientes y pagos.",
+				"description": "API en producción que procesa entre 15 y 25 mil solicitudes por segundo con latencia p99 de ~7ms. Autenticación JWT, persistencia en MongoDB y caché en Redis.",
+				"techs": ["Rust", "Axum", "Tokio", "MongoDB", "Redis", "JWT"],
+				"code": "",
+				"image": "/imgP1/placeholder.webp",
+				"view": "",
+				"featured": true,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
 			},
 			{
 				"id": 2,
-				"title": "CRUD de Turnos",
-				"summary": "Sistema full-stack de gestión de turnos con autenticación y panel por usuario.",
-				"description": "Aplicación full-stack para gestión de turnos médicos. Incluye registro/login con autenticación, creación y cancelación de turnos, historial por usuario y validaciones a nivel de formulario y servidor. API REST tipada con TypeScript y persistencia en PostgreSQL vía TypeORM.",
-				"techs": ["React", "Redux Toolkit", "Formik", "Express.js", "TypeScript", "PostgreSQL", "TypeORM"],
-				"code": "https://github.com/Heizahn/project-m3-henry",
-				"image": "/imgP1/05.png",
+				"title": "ABDO PWA",
+				"summary": "App progresiva instalable para gestión de pagos y deudas.",
+				"description": "Aplicación móvil instalable en Android e iOS con autenticación por OTP, diseñada mobile-first y con funcionamiento offline.",
+				"techs": ["React 19", "TypeScript", "Vite", "Tailwind v4", "Vite PWA"],
+				"code": "",
+				"image": "/imgP1/placeholder.webp",
 				"view": "",
-				"featured": false
+				"featured": true,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
+			},
+			{
+				"id": 3,
+				"title": "Panel ABDO",
+				"summary": "Panel administrativo con tablas, gráficos y reportes en tiempo real.",
+				"description": "Dashboard interno para gestión de clientes con paginación y filtros eficientes, gráficos analíticos y exportación de reportes.",
+				"techs": ["React 19", "TypeScript", "TanStack Query", "TanStack Table", "MUI", "Recharts"],
+				"code": "https://github.com/Heizahn/front-abdo",
+				"image": "/imgP1/placeholder.webp",
+				"view": "",
+				"featured": true,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
+			},
+			{
+				"id": 4,
+				"title": "ONU Manager",
+				"summary": "Herramienta para gestionar ONUs vía SSH en redes de fibra óptica.",
+				"description": "Aplicación web que automatiza tareas operativas sobre dispositivos ONU mediante conexiones SSH, reduciendo tiempos de provisionamiento.",
+				"techs": ["Bun", "Elysia", "SSH2", "TypeScript"],
+				"code": "https://github.com/Heizahn/onu_manager",
+				"image": "/imgP1/placeholder.webp",
+				"view": "",
+				"featured": false,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
+			},
+			{
+				"id": 5,
+				"title": "Daemon",
+				"summary": "Programador de tareas en segundo plano con jobs cron.",
+				"description": "Servicio backend que ejecuta tareas recurrentes y cargas pesadas fuera del flujo principal, con persistencia y auditoría en MongoDB.",
+				"techs": ["Bun", "MongoDB", "node-cron", "TypeScript"],
+				"code": "https://github.com/Heizahn/daemon",
+				"image": "/imgP1/placeholder.webp",
+				"view": "",
+				"featured": false,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
 			}
 		]
 	},
 	"en": {
-		"title": "Projects",
-		"subtitle": "A selection of what I've built. Each one solved a real problem — these aren't demos.",
+		"title": "Selected work",
+		"subtitle": "Recent work for clients and personal projects.",
 		"labels": {
-			"code": "Code",
-			"view": "Live demo",
-			"featured": "Featured"
+			"code": "Source",
+			"view": "View demo",
+			"featured": "Featured",
+			"client": "Client",
+			"viewSite": "Visit site"
 		},
 		"projects": [
 			{
 				"id": 1,
-				"title": "Rest Country API",
-				"summary": "Country explorer with search, region filters and full per-country detail.",
-				"description": "Web app that consumes the Rest Countries API to show data for every country in the world. Includes search by name or capital, region filters, persistent light/dark mode, and a detailed view with official languages, currency, neighbors and more.",
-				"techs": ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
-				"code": "https://github.com/heizahn/rest-country-api",
-				"image": "/imgP1/rca.jpg",
-				"view": "https://rest-country-api-kappa.vercel.app/",
-				"featured": true
+				"title": "API ABDO",
+				"summary": "High-performance REST API for client and payment management.",
+				"description": "Production API handling 15–25k requests per second with ~7ms p99 latency. JWT authentication, MongoDB persistence and Redis caching.",
+				"techs": ["Rust", "Axum", "Tokio", "MongoDB", "Redis", "JWT"],
+				"code": "",
+				"image": "/imgP1/placeholder.webp",
+				"view": "",
+				"featured": true,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
 			},
 			{
 				"id": 2,
-				"title": "Appointment CRUD",
-				"summary": "Full-stack appointment system with authentication and per-user dashboard.",
-				"description": "Full-stack application for medical appointment management. Includes sign-up/login with authentication, appointment creation and cancellation, per-user history, and validation at both form and server level. REST API typed with TypeScript and persistence on PostgreSQL via TypeORM.",
-				"techs": ["React", "Redux Toolkit", "Formik", "Express.js", "TypeScript", "PostgreSQL", "TypeORM"],
-				"code": "https://github.com/Heizahn/project-m3-henry",
-				"image": "/imgP1/05.png",
+				"title": "ABDO PWA",
+				"summary": "Installable PWA for payment and debt management.",
+				"description": "Mobile-installable app for Android and iOS with OTP authentication, mobile-first design and offline support.",
+				"techs": ["React 19", "TypeScript", "Vite", "Tailwind v4", "Vite PWA"],
+				"code": "",
+				"image": "/imgP1/placeholder.webp",
 				"view": "",
-				"featured": false
+				"featured": true,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
+			},
+			{
+				"id": 3,
+				"title": "ABDO Admin Panel",
+				"summary": "Admin dashboard with real-time tables, charts and reports.",
+				"description": "Internal dashboard for client management with efficient pagination and filtering, analytical charts and report export.",
+				"techs": ["React 19", "TypeScript", "TanStack Query", "TanStack Table", "MUI", "Recharts"],
+				"code": "https://github.com/Heizahn/front-abdo",
+				"image": "/imgP1/placeholder.webp",
+				"view": "",
+				"featured": true,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
+			},
+			{
+				"id": 4,
+				"title": "ONU Manager",
+				"summary": "Tool for managing fiber-optic ONU devices over SSH.",
+				"description": "Web app that automates operational tasks on ONU devices via SSH, reducing provisioning time.",
+				"techs": ["Bun", "Elysia", "SSH2", "TypeScript"],
+				"code": "https://github.com/Heizahn/onu_manager",
+				"image": "/imgP1/placeholder.webp",
+				"view": "",
+				"featured": false,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
+			},
+			{
+				"id": 5,
+				"title": "Daemon",
+				"summary": "Background task scheduler with cron jobs.",
+				"description": "Backend service that runs recurring tasks and heavy workloads outside the main flow, with persistence and auditing in MongoDB.",
+				"techs": ["Bun", "MongoDB", "node-cron", "TypeScript"],
+				"code": "https://github.com/Heizahn/daemon",
+				"image": "/imgP1/placeholder.webp",
+				"view": "",
+				"featured": false,
+				"client": "ABDO77",
+				"clientUrl": "https://abdo77.com.ve"
 			}
 		]
 	}

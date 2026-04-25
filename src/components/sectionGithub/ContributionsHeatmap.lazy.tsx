@@ -9,7 +9,7 @@ const ContributionsHeatmapDynamic = dynamic(
 	{
 		ssr: false,
 		loading: () => (
-			<div className='glass rounded-2xl p-6 h-[200px] animate-pulse bg-surface-muted/30' />
+			<div className='h-[200px] bg-[var(--color-surface-muted)] rounded-lg animate-pulse' />
 		),
 	},
 );

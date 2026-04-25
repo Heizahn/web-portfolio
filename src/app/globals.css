@@ -173,6 +173,22 @@
 		-ms-overflow-style: none;
 		scrollbar-width: none;
 	}
+
+	/* Compat utilities used by the redesigned GitHub section */
+	.hairline-b {
+		border-bottom: 1px solid rgb(var(--border));
+	}
+	.text-muted {
+		color: rgb(var(--ink-muted));
+	}
+}
+
+/* Alias var consumed by GitHub redesign's bg-[var(--color-surface-muted)] */
+:root {
+	--color-surface-muted: rgb(var(--surface-muted));
+}
+.dark {
+	--color-surface-muted: rgb(var(--surface-muted));
 }
 
 /* Respect reduced motion */

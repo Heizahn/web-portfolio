@@ -3,7 +3,7 @@
 		"title": "Sobre mí",
 		"about": {
 			"p1": "Soy desarrollador Full Stack enfocado en interfaces modernas y backends eficientes. Me obsesiona la claridad del código, la performance real y la experiencia del usuario final — no el hype de las tecnologías de moda.",
-			"p2": "Actualmente disponible para proyectos freelance y oportunidades remotas donde pueda aportar valor desde el primer commit. Si buscas a alguien que aprenda rápido, comunique claro y entregue sin vueltas, hablemos.",
+			"p2": "Actualmente trabajo como desarrollador para ABDO77, una empresa que confía en mis servicios para construir y mantener sus herramientas internas — desde APIs de alto rendimiento hasta aplicaciones móviles instalables.",
 			"p3": "Lo que domino:",
 			"skills": [
 				"React y Next.js con TypeScript",
@@ -21,13 +21,23 @@
 				"Aprendizaje continuo"
 			],
 			"p5": "Si tienes un proyecto en mente o un problema técnico que resolver, escríbeme."
-		}
+		},
+		"clients": [
+			{
+				"name": "ABDO77",
+				"url": "https://abdo77.com.ve",
+				"role": {
+					"es": "Desarrollador",
+					"en": "Developer"
+				}
+			}
+		]
 	},
 	"en": {
 		"title": "About me",
 		"about": {
 			"p1": "I'm a Full Stack developer focused on modern interfaces and efficient backends. I obsess over code clarity, real-world performance, and the end-user experience — not hype-driven tech.",
-			"p2": "Currently available for freelance projects and remote opportunities where I can deliver value from the first commit. If you're looking for someone who learns fast, communicates clearly, and ships without drama, let's talk.",
+			"p2": "I'm currently working as a developer for ABDO77, a company that trusts my services to build and maintain their internal tools — from high-performance APIs to installable mobile apps.",
 			"p3": "What I do well:",
 			"skills": [
 				"React and Next.js with TypeScript",
@@ -45,6 +55,16 @@
 				"Continuous learning"
 			],
 			"p5": "If you have a project in mind or a technical problem to solve, drop me a line."
-		}
+		},
+		"clients": [
+			{
+				"name": "ABDO77",
+				"url": "https://abdo77.com.ve",
+				"role": {
+					"es": "Desarrollador",
+					"en": "Developer"
+				}
+			}
+		]
 	}
 }

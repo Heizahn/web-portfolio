@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FiGithub } from 'react-icons/fi';
 import useLang from '../hooks/useLang';
 import data from './data.json';
 
@@ -10,17 +9,16 @@ export default function SectionHeader() {
 	const t = data[lang];
 	return (
 		<motion.header
-			initial={{ opacity: 0, y: 16 }}
+			initial={{ opacity: 0, y: 8 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			viewport={{ once: true, margin: '-60px' }}
-			transition={{ duration: 0.5 }}
-			className='mb-8'
+			transition={{ duration: 0.4 }}
+			className='mb-10 hairline-b pb-8'
 		>
-			<h2 className='font-display flex items-center gap-x-3 text-3xl font-semibold text-ink'>
-				<FiGithub className='text-accent-500 dark:text-accent-400' />
+			<h2 className='font-display text-4xl md:text-5xl font-normal tracking-tight text-[var(--color-text)]'>
 				{t.title}
 			</h2>
-			<p className='text-ink-muted mt-1 text-sm'>{t.subtitle}</p>
+			<p className='text-muted mt-2 text-base'>{t.subtitle}</p>
 		</motion.header>
 	);
 }

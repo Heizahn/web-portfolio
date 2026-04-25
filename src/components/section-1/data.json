@@ -1,30 +1,26 @@
 {
 	"es": {
-		"greeting": "hola, mundo",
-		"title": "Convierto ideas en productos web que funcionan.",
-		"description": "Soy <strong>Humberto Bracho</strong>, desarrollador Full Stack. Construyo interfaces rápidas con <strong>React / Next.js</strong> y backends sólidos en <strong>Node.js / Bun</strong> y <strong>Rust</strong>. Más de 2 años enfocado en código limpio, UX pulida y performance medible.",
+		"greeting": "Hola, soy",
+		"title": "Humberto Bracho",
+		"description": "Desarrollador Full Stack. Construyo APIs rápidas, paneles administrativos y aplicaciones web instalables.",
 		"roles": [
-			"Frontend con React & Next.js",
-			"Backend con Node.js & Bun",
-			"Sistemas con Rust",
-			"APIs & bases de datos",
-			"Interfaces con performance medible"
+			"Full Stack Developer",
+			"Backend Engineer",
+			"Frontend Developer"
 		],
-		"contact": "Hablemos",
+		"contact": "Contáctame",
 		"scrollHint": "Desplázate"
 	},
 	"en": {
-		"greeting": "hello, world",
-		"title": "I turn ideas into web products that ship.",
-		"description": "I'm <strong>Humberto Bracho</strong>, a Full Stack developer. I craft fast interfaces with <strong>React / Next.js</strong> and solid backends in <strong>Node.js / Bun</strong> and <strong>Rust</strong>. 2+ years focused on clean code, polished UX, and measurable performance.",
+		"greeting": "Hi, I'm",
+		"title": "Humberto Bracho",
+		"description": "Full Stack Developer. I build fast APIs, admin dashboards and installable web apps.",
 		"roles": [
-			"Frontend with React & Next.js",
-			"Backend with Node.js & Bun",
-			"Systems with Rust",
-			"APIs & databases",
-			"Interfaces with measurable perf"
+			"Full Stack Developer",
+			"Backend Engineer",
+			"Frontend Developer"
 		],
-		"contact": "Let's talk",
+		"contact": "Get in touch",
 		"scrollHint": "Scroll"
 	}
 }

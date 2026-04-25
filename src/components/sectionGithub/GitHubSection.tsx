@@ -21,13 +21,15 @@ export default async function GitHubSection() {
 	]);
 
 	return (
-		<section className='w-full pt-16 mx-auto container lg:max-w-4xl md:max-w-2xl'>
+		<section
+			className='w-full pt-24 mx-auto container lg:max-w-[1100px] md:max-w-2xl'
+		>
 			<SectionHeader />
 
 			{!user ? (
 				<SectionError />
 			) : (
-				<div className='flex flex-col gap-6'>
+				<div className='flex flex-col gap-10'>
 					<ProfileCard user={user} />
 
 					<StatsGrid

@@ -1,7 +1,7 @@
 {
 	"es": {
 		"title": "Hablemos",
-		"subtitle": "¿Tienes un proyecto en mente o una idea que quieres llevar a producción? Escríbeme — respondo rápido.",
+		"subtitle": "Escríbeme para hablar de tu proyecto — respondo rápido.",
 		"availability": "Abierto a nuevos proyectos",
 		"channels": {
 			"email": {
@@ -37,7 +37,7 @@
 	},
 	"en": {
 		"title": "Let's talk",
-		"subtitle": "Got a project in mind or an idea you want to ship? Drop me a line — I reply quickly.",
+		"subtitle": "Drop me a line about your project — I reply quickly.",
 		"availability": "Open to new projects",
 		"channels": {
 			"email": {
