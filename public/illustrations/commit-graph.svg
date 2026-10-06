@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="t d">
+  <title id="t">Grafo de commits</title>
+  <desc id="d">Dos ramas de trabajo nacen de main, avanzan y vuelven a fusionarse.</desc>
+  <!-- Forja · ilustración original de Heizahn, licencia CC0 -->
+  <style>
+    .draw{stroke-dasharray:400;stroke-dashoffset:400;animation:draw 8s cubic-bezier(.65,0,.35,1) infinite}
+    .b1{animation-delay:.6s}.b2{animation-delay:1.4s}
+    @keyframes draw{0%{stroke-dashoffset:400}40%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:-400}}
+    .node{transform-box:fill-box;transform-origin:center;transform:scale(0);animation:pop 8s cubic-bezier(.34,1.56,.64,1) infinite}
+    @keyframes pop{0%{transform:scale(0)}6%,85%{transform:scale(1)}92%,100%{transform:scale(0)}}
+    .n1{animation-delay:.2s}.n2{animation-delay:.9s}.n3{animation-delay:1.5s}.n4{animation-delay:2s}.n5{animation-delay:2.5s}.n6{animation-delay:3s}.n7{animation-delay:3.4s}
+    .head{transform-box:fill-box;transform-origin:center;animation:ping 2s ease-out infinite}
+    @keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(2.6);opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.draw{stroke-dashoffset:0}.node{transform:scale(1)}}
+  </style>
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <path class="draw" d="M30 150 H370" stroke="#B6BFCE"/>
+    <path class="draw b1" d="M90 150 C120 150 120 80 150 80 H250 C280 80 280 150 310 150" stroke="#FF8A4C"/>
+    <path class="draw b2" d="M150 150 C175 150 175 220 200 220 H230 C255 220 255 150 270 150" stroke="#3FD0B5"/>
+  </g>
+  <g stroke="#0E1220" stroke-width="3">
+    <circle class="node n1" cx="90" cy="150" r="9" fill="#B6BFCE"/>
+    <circle class="node n2" cx="150" cy="80" r="9" fill="#FF8A4C"/>
+    <circle class="node n3" cx="200" cy="80" r="9" fill="#FF8A4C"/>
+    <circle class="node n3" cx="200" cy="220" r="9" fill="#3FD0B5"/>
+    <circle class="node n4" cx="250" cy="80" r="9" fill="#FF8A4C"/>
+    <circle class="node n5" cx="270" cy="150" r="9" fill="#3FD0B5"/>
+    <circle class="node n6" cx="310" cy="150" r="10" fill="#FFD27A"/>
+  </g>
+  <circle class="head" cx="310" cy="150" r="10" fill="none" stroke="#FFD27A" stroke-width="2"/>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="12" font-weight="700">
+    <text x="30" y="176" fill="#8792A6">main</text>
+    <text x="150" y="60" fill="#FF8A4C">feat/forja</text>
+    <text x="180" y="250" fill="#3FD0B5">fix/contraste</text>
+  </g>
+</svg>

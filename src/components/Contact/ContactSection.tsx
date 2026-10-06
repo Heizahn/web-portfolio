@@ -123,7 +123,7 @@ export default function ContactSection() {
 							transition={{ duration: 0.4, delay: i * 0.08 }}
 							className='group glass rounded-xl p-4 flex items-center gap-4 hover:shadow-glow hover:-translate-y-0.5 transition-all'
 						>
-							<div className='flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-brand-500/20 to-accent-500/20 border border-brand-500/30 flex items-center justify-center text-accent-600 dark:text-accent-400'>
+							<div className='flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-ember/20 to-spark/20 border border-ember/30 flex items-center justify-center text-accent-600 dark:text-accent-400'>
 								{c.icon}
 							</div>
 							<div className='min-w-0 flex-1'>
@@ -193,8 +193,8 @@ export default function ContactSection() {
 							className={`w-full rounded-xl px-4 py-3 text-sm bg-surface-muted border ${
 								errors.message
 									? 'border-red-500/60 focus:border-red-500'
-									: 'border-border focus:border-accent-500'
-							} text-ink placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-accent-500/30 transition resize-none`}
+									: 'border-border focus:border-ember'
+							} text-ink placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-ember/30 transition resize-none`}
 						/>
 						{errors.message && (
 							<p className='text-xs text-red-500'>{errors.message}</p>
@@ -251,8 +251,8 @@ function Field({ id, label, placeholder, value, onChange, error, type = 'text', 
 				className={`w-full rounded-xl px-4 py-2.5 text-sm bg-surface-muted border ${
 					error
 						? 'border-red-500/60 focus:border-red-500'
-						: 'border-border focus:border-accent-500'
-				} text-ink placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-accent-500/30 transition`}
+						: 'border-border focus:border-ember'
+				} text-ink placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-ember/30 transition`}
 			/>
 			{error && <p className='text-xs text-red-500'>{error}</p>}
 		</div>

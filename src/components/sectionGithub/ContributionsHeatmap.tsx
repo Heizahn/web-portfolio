@@ -12,8 +12,8 @@ interface Props {
 }
 
 const calendarTheme = {
-	light: ['#ebebeb', '#d4d4d4', '#a3a3a3', '#525252', '#1d1d1f'],
-	dark: ['#1d1d1f', '#3a3a3c', '#6e6e73', '#aeaeb2', '#f5f5f7'],
+	light: ['#e9edf2', '#ffc9a8', '#ff8a4c', '#c2410c', '#7c2d12'],
+	dark: ['#151b2c', '#5f230e', '#9a3412', '#f2661f', '#ffd27a'],
 };
 
 const labels = {

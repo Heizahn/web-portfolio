@@ -32,9 +32,9 @@ export default function Card({
 				whileInView={{ scale: 1 }}
 				viewport={{ once: true }}
 				transition={{ duration: 0.35, delay: 0.15, type: 'spring', stiffness: 260 }}
-				className='absolute left-0 md:left-1/2 top-2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-brand-500 to-accent-500 ring-4 ring-surface shadow-glow'
+				className='absolute left-0 md:left-1/2 top-2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-ember to-spark ring-4 ring-surface shadow-glow'
 			>
-				<span className='absolute inset-0 rounded-full bg-gradient-to-br from-brand-500 to-accent-500 animate-ping opacity-40' />
+				<span className='absolute inset-0 rounded-full bg-gradient-to-br from-ember to-spark animate-ping opacity-40' />
 			</motion.span>
 
 			{/* Card */}

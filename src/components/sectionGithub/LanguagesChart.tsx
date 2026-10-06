@@ -11,7 +11,7 @@ interface Props {
 
 // Grayscale + accent for top language
 function getBarColor(index: number): string {
-	const colors = ['#0071e3', '#525252', '#a3a3a3', '#d4d4d4', '#ebebeb'];
+	const colors = ['#ff8a4c', '#3fd0b5', '#7ab2ff', '#ffd27a', '#8792a6'];
 	return colors[Math.min(index, colors.length - 1)];
 }
 

@@ -31,7 +31,11 @@
 					"en": "Developer"
 				}
 			}
-		]
+		],
+		"pair": {
+			"title": "Programo en pareja con IA",
+			"text": "Trabajo con Claude como compañero de pair programming: yo defino el problema, el criterio y la arquitectura; la IA acelera la exploración, los borradores y las pruebas. Cada cambio pasa por mi revisión antes de llegar a producción."
+		}
 	},
 	"en": {
 		"title": "About me",
@@ -65,6 +69,10 @@
 					"en": "Developer"
 				}
 			}
-		]
+		],
+		"pair": {
+			"title": "I pair program with AI",
+			"text": "I work with Claude as a pair-programming partner: I own the problem, the judgment and the architecture; the AI speeds up exploration, drafts and tests. Every change goes through my review before it ships."
+		}
 	}
 }

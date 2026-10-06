@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
 			'Portfolio of Humberto Bracho. Full Stack developer — React, Node/Bun, Rust.',
 		start_url: '/',
 		display: 'standalone',
-		background_color: '#0b0a18',
-		theme_color: '#6366f1',
+		background_color: '#0e1220',
+		theme_color: '#ff8a4c',
 		icons: [
 			{
 				src: '/favicon.ico',

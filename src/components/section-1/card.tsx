@@ -5,9 +5,7 @@ import useLang from '../hooks/useLang';
 import { Github, LinkedIn, MAILTO } from '@/env/env';
 import { EmailIcon, GithubIcon, LinkedInIcon } from '../icons/icons';
 import TypewriterText from '../typing/TypewriterText';
-
-const linkStyle =
-	'inline-flex items-center justify-center gap-2 px-4 py-2 transition-all duration-300 glass-sm text-ink text-sm md:text-base hover:scale-[1.04] hover:shadow-glow group max-w-fit rounded-full';
+import { SparkButton, TechMarquee, TemperText } from '../ds';
 
 const container = {
 	hidden: { opacity: 0 },
@@ -43,9 +41,9 @@ export default function Card() {
 
 			<motion.h1
 				variants={item}
-				className='font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl md:text-6xl text-balance leading-[1.1]'
+				className='font-display text-5xl font-extrabold tracking-tight text-ink sm:text-6xl md:text-7xl text-balance leading-[1.02]'
 			>
-				{t.title}
+				<TemperText text={t.title} delay={0.35} />
 			</motion.h1>
 
 			<motion.div
@@ -54,7 +52,7 @@ export default function Card() {
 			>
 				<TypewriterText
 					words={t.roles}
-					cursorClassName='bg-gradient-to-b from-brand-500 to-accent-500'
+					cursorClassName='bg-gradient-to-b from-ember to-spark'
 				/>
 			</motion.div>
 
@@ -65,17 +63,21 @@ export default function Card() {
 			/>
 
 			<motion.nav variants={item} className='flex flex-wrap gap-3 mt-8'>
-				<a className={linkStyle} href={MAILTO} rel='noopener'>
+				<SparkButton href={MAILTO} rel='noopener'>
 					<EmailIcon />
 					{t.contact}
-				</a>
-				<a className={linkStyle} target='_blank' href={LinkedIn} rel='noopener noreferrer'>
+				</SparkButton>
+				<SparkButton variant='outline' target='_blank' href={LinkedIn} rel='noopener noreferrer'>
 					<LinkedInIcon /> LinkedIn
-				</a>
-				<a className={linkStyle} target='_blank' href={Github} rel='noopener noreferrer'>
+				</SparkButton>
+				<SparkButton variant='outline' target='_blank' href={Github} rel='noopener noreferrer'>
 					<GithubIcon /> GitHub
-				</a>
+				</SparkButton>
 			</motion.nav>
+
+			<motion.div variants={item} className='mt-10 max-w-xl'>
+				<TechMarquee />
+			</motion.div>
 		</motion.div>
 	);
 }

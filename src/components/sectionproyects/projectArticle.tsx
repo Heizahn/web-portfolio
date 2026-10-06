@@ -63,7 +63,7 @@ export default function ProjectArticle({
 					<div className='w-full md:w-1/2 relative'>
 						<div className='relative overflow-hidden rounded-xl ring-1 ring-border bg-surface-muted aspect-video'>
 							{/* Gradient glow behind image */}
-							<div className='absolute -inset-1 bg-gradient-to-br from-brand-500/30 via-accent-500/20 to-transparent opacity-0 group-hover:opacity-100 blur-2xl transition-opacity duration-500 -z-10' />
+							<div className='absolute -inset-1 bg-gradient-to-br from-ember/30 via-spark/20 to-transparent opacity-0 group-hover:opacity-100 blur-2xl transition-opacity duration-500 -z-10' />
 
 							<Image
 								src={image}
@@ -76,7 +76,7 @@ export default function ProjectArticle({
 							{/* Top gradient overlay for readability of featured badge */}
 							{featured && (
 								<div className='absolute top-3 left-3 z-10'>
-									<span className='inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-brand-500 to-accent-500 text-white shadow-lg'>
+									<span className='inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-molten shadow-lg'>
 										<HiOutlineSparkles className='w-3.5 h-3.5' />
 										{labels.featured}
 									</span>

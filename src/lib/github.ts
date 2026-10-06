@@ -180,4 +180,4 @@ export const LANG_COLORS: Record<string, string> = {
 };
 
 export const getLangColor = (name: string): string =>
-	LANG_COLORS[name] ?? '#a855f7';
+	LANG_COLORS[name] ?? '#8792a6';

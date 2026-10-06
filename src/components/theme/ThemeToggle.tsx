@@ -32,7 +32,7 @@ export default function ThemeToggle({ className = '' }: { className?: string }) 
 						transition={{ duration: 0.25 }}
 						className='text-lg'
 					>
-						{isDark ? <FiMoon className='text-accent-300' /> : <FiSun className='text-amber-500' />}
+						{isDark ? <FiMoon className='text-spark' /> : <FiSun className='text-ember' />}
 					</motion.span>
 				)}
 			</AnimatePresence>

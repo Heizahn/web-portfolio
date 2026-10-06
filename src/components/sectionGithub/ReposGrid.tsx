@@ -30,7 +30,7 @@ export default function ReposGrid({ repos, username }: Props) {
 					href={`https://github.com/${username}?tab=repositories`}
 					target='_blank'
 					rel='noopener noreferrer'
-					className='text-sm text-[#0071e3] hover:underline underline-offset-2 whitespace-nowrap'
+					className='text-sm text-flame hover:underline underline-offset-2 whitespace-nowrap'
 				>
 					{t.viewAll} ↗
 				</a>

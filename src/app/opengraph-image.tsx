@@ -17,7 +17,7 @@ export default async function Image() {
 					justifyContent: 'space-between',
 					padding: '80px',
 					background:
-						'linear-gradient(135deg, #0b0a18 0%, #1e1b4b 50%, #4c1d95 100%)',
+						'linear-gradient(135deg, #0e1220 0%, #151b2c 60%, #341006 100%)',
 					color: 'white',
 					fontFamily: 'sans-serif',
 					position: 'relative',
@@ -32,7 +32,7 @@ export default async function Image() {
 						height: '420px',
 						borderRadius: '50%',
 						background:
-							'radial-gradient(circle, rgba(168,85,247,0.55), transparent 70%)',
+							'radial-gradient(circle, rgba(255,138,76,0.55), transparent 70%)',
 					}}
 				/>
 				<div
@@ -44,7 +44,7 @@ export default async function Image() {
 						height: '380px',
 						borderRadius: '50%',
 						background:
-							'radial-gradient(circle, rgba(99,102,241,0.55), transparent 70%)',
+							'radial-gradient(circle, rgba(63,208,181,0.35), transparent 70%)',
 					}}
 				/>
 
@@ -54,7 +54,7 @@ export default async function Image() {
 						alignItems: 'center',
 						gap: '12px',
 						fontSize: '22px',
-						color: '#a5b4fc',
+						color: '#ffd27a',
 						fontFamily: 'monospace',
 					}}
 				>
@@ -63,7 +63,7 @@ export default async function Image() {
 							width: '10px',
 							height: '10px',
 							borderRadius: '50%',
-							background: '#10b981',
+							background: '#3fd0b5',
 						}}
 					/>
 					heizahn.dev
@@ -85,7 +85,7 @@ export default async function Image() {
 						style={{
 							fontSize: '40px',
 							fontWeight: 500,
-							color: '#c4b5fd',
+							color: '#ff8a4c',
 							lineHeight: 1.2,
 							display: 'flex',
 						}}
@@ -95,7 +95,7 @@ export default async function Image() {
 					<div
 						style={{
 							fontSize: '28px',
-							color: '#94a3b8',
+							color: '#b6bfce',
 							maxWidth: '900px',
 							lineHeight: 1.4,
 							display: 'flex',
@@ -110,7 +110,7 @@ export default async function Image() {
 						display: 'flex',
 						gap: '14px',
 						fontSize: '22px',
-						color: '#e2e8f0',
+						color: '#eef1f6',
 					}}
 				>
 					{['React', 'Next.js', 'TypeScript', 'Node / Bun', 'Rust'].map((t) => (
@@ -119,8 +119,8 @@ export default async function Image() {
 							style={{
 								padding: '10px 20px',
 								borderRadius: '999px',
-								border: '1px solid rgba(168,85,247,0.4)',
-								background: 'rgba(99,102,241,0.18)',
+								border: '1px solid rgba(255,138,76,0.45)',
+								background: 'rgba(255,138,76,0.12)',
 								display: 'flex',
 							}}
 						>

@@ -6,6 +6,7 @@ import data from './data.json';
 import useLang from '../hooks/useLang';
 import { MAILTO } from '@/env/env';
 import sectionOneData from '../section-1/data.json';
+import { Illustration, PairTerminal, Reveal, SparkButton } from '../ds';
 
 export default function SectionAbout() {
 	const { lang } = useLang();
@@ -31,25 +32,30 @@ export default function SectionAbout() {
 					</div>
 					<div className='mt-8'>
 						<p className='text-ink-muted mb-4'>{data[lang].about.p5}</p>
-						<a
-							href={MAILTO}
-							rel='noopener'
-							className='btn-primary text-base'
-						>
+						<SparkButton href={MAILTO} rel='noopener'>
 							<EmailIcon />
 							{sectionOneData[lang].contact}
-						</a>
+						</SparkButton>
 					</div>
 				</div>
 
 				<Image
-					className='order-1 aspect-square object-cover min-w-52 lg:min-w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 rounded-xl bg-brand-500/5 dark:bg-accent-800/5 ring-1 ring-brand-500/20 dark:ring-white/10 shadow-glass'
+					className='order-1 aspect-square object-cover min-w-52 lg:min-w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 rounded-xl bg-ember/5 ring-1 ring-ember/25 dark:ring-white/10 shadow-glass'
 					src={profileImg}
 					width={200}
 					height={200}
 					alt='Humberto Bracho'
 				/>
 			</article>
+
+			<Reveal effect='forge' className='mt-16 grid items-center gap-8 md:grid-cols-[1.1fr_1fr]'>
+				<PairTerminal />
+				<div className='flex flex-col gap-4'>
+					<Illustration name='pair-cursors' className='w-full max-w-sm h-auto' />
+					<h3 className='font-display text-2xl font-bold text-ink text-balance'>{data[lang].pair.title}</h3>
+					<p className='text-ink-muted text-pretty'>{data[lang].pair.text}</p>
+				</div>
+			</Reveal>
 		</section>
 	);
 }

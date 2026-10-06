@@ -1,21 +1,27 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Bricolage_Grotesque, Instrument_Sans, JetBrains_Mono } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
-import ParticlesBack from '@/components/particles/ParticlesBack';
+import EmberField from '@/components/ds/EmberField';
 import { LangContextProvider } from '@/components/context/lang-context';
 import { ThemeProvider } from '@/components/theme/ThemeProvider';
 import { Github, LinkedIn, MAILTO } from '@/env/env';
 
-const inter = Inter({
+const instrumentSans = Instrument_Sans({
 	subsets: ['latin'],
 	variable: '--font-sans',
 	display: 'swap',
 });
 
-const spaceGrotesk = Space_Grotesk({
+const bricolage = Bricolage_Grotesque({
 	subsets: ['latin'],
 	variable: '--font-display',
+	display: 'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+	subsets: ['latin'],
+	variable: '--font-mono',
 	display: 'swap',
 });
 
@@ -98,8 +104,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
 	themeColor: [
-		{ media: '(prefers-color-scheme: light)', color: '#f8fafc' },
-		{ media: '(prefers-color-scheme: dark)', color: '#0b0a18' },
+		{ media: '(prefers-color-scheme: light)', color: '#f4f6f9' },
+		{ media: '(prefers-color-scheme: dark)', color: '#0e1220' },
 	],
 	width: 'device-width',
 	initialScale: 1,
@@ -138,7 +144,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang='es'
-			className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth`}
+			className={`${instrumentSans.variable} ${bricolage.variable} ${jetbrainsMono.variable} scroll-smooth`}
 			suppressHydrationWarning
 		>
 			<head>
@@ -148,12 +154,12 @@ export default function RootLayout({
 			<body className='font-sans antialiased'>
 				<a
 					href='#main-content'
-					className='sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-brand-500 focus:text-white focus:shadow-glow focus:outline-none'
+					className='sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-ember focus:text-on-ember focus:shadow-glow focus:outline-none'
 				>
 					Skip to content
 				</a>
 				<ThemeProvider>
-					<ParticlesBack />
+					<EmberField />
 					<LangContextProvider>{children}</LangContextProvider>
 				</ThemeProvider>
 				<Script

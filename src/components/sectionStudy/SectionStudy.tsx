@@ -18,7 +18,7 @@ export default function SectionStudy() {
 				{/* Vertical line */}
 				<div
 					aria-hidden='true'
-					className='absolute left-[7px] md:left-1/2 top-2 bottom-2 w-[2px] md:-translate-x-[1px] bg-gradient-to-b from-brand-500 via-accent-500 to-accent-500/20'
+					className='absolute left-[7px] md:left-1/2 top-2 bottom-2 w-[2px] md:-translate-x-[1px] bg-gradient-to-b from-ember via-spark to-verdigris/20'
 				/>
 
 				<ol className='relative flex flex-col gap-10 md:gap-14'>

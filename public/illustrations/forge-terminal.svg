@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="t d">
+  <title id="t">Terminal en la forja</title>
+  <desc id="d">Una ventana de terminal escribe código mientras el cursor suelta chispas.</desc>
+  <!-- Forja · ilustración original de Heizahn, licencia CC0 -->
+  <defs>
+    <linearGradient id="molten" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF8A4C"/>
+      <stop offset="1" stop-color="#FFD27A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF8A4C" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FF8A4C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .line{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:type 7s cubic-bezier(.22,1,.36,1) infinite}
+    .l2{animation-delay:.5s}.l3{animation-delay:1s}.l4{animation-delay:1.5s}.l5{animation-delay:2s}.l6{animation-delay:2.5s}.l7{animation-delay:3s}
+    @keyframes type{0%{transform:scaleX(0)}8%,85%{transform:scaleX(1)}95%,100%{transform:scaleX(0)}}
+    .cursor{animation:blink 1s steps(1) infinite, ride 7s cubic-bezier(.22,1,.36,1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    @keyframes ride{0%{transform:translate(0,0)}14%{transform:translate(0,22px)}21%{transform:translate(0,44px)}28%{transform:translate(0,66px)}35%{transform:translate(0,88px)}42%,85%{transform:translate(0,110px)}100%{transform:translate(0,0)}}
+    .spark{transform-box:fill-box;animation:fly 1.6s ease-out infinite;opacity:0}
+    .s2{animation-delay:.3s}.s3{animation-delay:.7s}.s4{animation-delay:1s}.s5{animation-delay:1.3s}
+    @keyframes fly{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--x),-46px) scale(.2)}}
+    .halo{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes pulse{50%{opacity:.5;transform:scale(1.15)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.line{transform:scaleX(1)}}
+  </style>
+  <ellipse class="halo" cx="200" cy="270" rx="150" ry="22" fill="url(#glow)"/>
+  <rect x="50" y="40" width="300" height="210" rx="14" fill="#151B2C" stroke="#3A4664" stroke-width="2"/>
+  <path d="M50 54a14 14 0 0 1 14-14h272a14 14 0 0 1 14 14v18H50z" fill="#1B2236"/>
+  <circle cx="72" cy="56" r="5" fill="#FF8A4C"/><circle cx="90" cy="56" r="5" fill="#FFD27A"/><circle cx="108" cy="56" r="5" fill="#3FD0B5"/>
+  <rect x="150" y="51" width="100" height="10" rx="5" fill="#263049"/>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="13" font-weight="700">
+    <text x="70" y="98" fill="#3FD0B5">❯</text>
+  </g>
+  <rect class="line l1" x="88" y="89" width="150" height="10" rx="5" fill="url(#molten)"/>
+  <rect class="line l2" x="88" y="111" width="64" height="10" rx="5" fill="#7AB2FF"/>
+  <rect class="line l2" x="158" y="111" width="110" height="10" rx="5" fill="#56627F"/>
+  <rect class="line l3" x="104" y="133" width="96" height="10" rx="5" fill="#3FD0B5"/>
+  <rect class="line l3" x="206" y="133" width="52" height="10" rx="5" fill="#B6BFCE"/>
+  <rect class="line l4" x="104" y="155" width="180" height="10" rx="5" fill="#56627F"/>
+  <rect class="line l5" x="104" y="177" width="70" height="10" rx="5" fill="#FFD27A"/>
+  <rect class="line l5" x="180" y="177" width="90" height="10" rx="5" fill="#7AB2FF"/>
+  <rect class="line l6" x="88" y="199" width="40" height="10" rx="5" fill="#B6BFCE"/>
+  <g class="cursor">
+    <rect x="246" y="86" width="9" height="16" rx="2" fill="#FF8A4C"/>
+    <circle class="spark" style="--x:-14px" cx="250" cy="86" r="2.5" fill="#FFD27A"/>
+    <circle class="spark s2" style="--x:10px" cx="251" cy="86" r="2" fill="#FF8A4C"/>
+    <circle class="spark s3" style="--x:-4px" cx="249" cy="86" r="1.8" fill="#FFD27A"/>
+    <circle class="spark s4" style="--x:18px" cx="252" cy="86" r="1.5" fill="#FF8A4C"/>
+    <circle class="spark s5" style="--x:-20px" cx="248" cy="86" r="2" fill="#FFD27A"/>
+  </g>
+</svg>
