@@ -48,7 +48,7 @@ export default function RepoCard({ repo, index = 0 }: Props) {
 			className='group flex flex-col gap-2 py-4 hairline-b hover:bg-[var(--color-surface-muted)] px-3 -mx-3 rounded-lg transition-colors duration-200'
 		>
 			<div className='flex items-start justify-between gap-2'>
-				<h4 className='text-sm font-medium text-[#0071e3] group-hover:underline underline-offset-2 truncate'>
+				<h4 className='text-sm font-medium text-flame group-hover:underline underline-offset-2 truncate'>
 					{repo.name}
 				</h4>
 			</div>

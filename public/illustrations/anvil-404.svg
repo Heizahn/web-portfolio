@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="t d">
+  <title id="t">Yunque 404</title>
+  <desc id="d">Un martillo golpea un lingote al rojo sobre un yunque y saltan chispas.</desc>
+  <!-- Forja · ilustración original de Heizahn, licencia CC0 -->
+  <defs>
+    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF8A4C"/><stop offset=".5" stop-color="#FFD27A"/><stop offset="1" stop-color="#FF8A4C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFD27A" stop-opacity=".6"/><stop offset="1" stop-color="#FF8A4C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .hammer{transform-origin:318px 60px;animation:strike 1.8s cubic-bezier(.7,0,.3,1) infinite}
+    @keyframes strike{0%,100%{transform:rotate(-38deg)}42%{transform:rotate(-38deg)}55%{transform:rotate(0)}62%{transform:rotate(-6deg)}}
+    .spark{opacity:0;animation:burst 1.8s ease-out infinite;transform-box:fill-box}
+    @keyframes burst{0%,54%{opacity:0;transform:translate(0,0)}56%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translate(var(--x),var(--y))}}
+    .glow{transform-origin:200px 128px;animation:flare 1.8s ease-out infinite}
+    @keyframes flare{0%,54%{opacity:.45;transform:scale(1)}58%{opacity:1;transform:scale(1.3)}100%{opacity:.45;transform:scale(1)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.hammer{transform:rotate(-20deg)}}
+  </style>
+  <ellipse class="glow" cx="200" cy="128" rx="90" ry="44" fill="url(#glow)"/>
+  <!-- yunque -->
+  <path d="M96 138 H284 Q300 138 312 128 L336 128 Q330 150 296 156 L262 160 Q250 176 250 196 H150 Q150 176 138 160 L110 156 Q92 152 96 138 Z" fill="#3A4664"/>
+  <path d="M96 138 H284 Q300 138 312 128 L336 128" fill="none" stroke="#8792A6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M130 196 H270 L284 226 H116 Z" fill="#263049"/>
+  <rect x="104" y="226" width="192" height="12" rx="4" fill="#1B2236"/>
+  <!-- lingote 404 -->
+  <rect x="150" y="116" width="100" height="22" rx="6" fill="url(#hot)"/>
+  <text x="200" y="133" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="16" font-weight="800" fill="#5F230E" letter-spacing="3">404</text>
+  <!-- chispas -->
+  <g fill="#FFD27A">
+    <circle class="spark" style="--x:-70px;--y:-60px" cx="200" cy="116" r="3"/>
+    <circle class="spark" style="--x:60px;--y:-80px" cx="200" cy="116" r="2.5"/>
+    <circle class="spark" style="--x:-30px;--y:-95px" cx="200" cy="116" r="2"/>
+    <circle class="spark" style="--x:95px;--y:-40px" cx="200" cy="116" r="2.5"/>
+    <circle class="spark" style="--x:-100px;--y:-25px" cx="200" cy="116" r="2"/>
+  </g>
+  <g fill="#FF8A4C">
+    <circle class="spark" style="--x:30px;--y:-100px" cx="200" cy="116" r="2"/>
+    <circle class="spark" style="--x:-55px;--y:-30px" cx="200" cy="116" r="2.5"/>
+    <circle class="spark" style="--x:80px;--y:-10px" cx="200" cy="116" r="1.8"/>
+  </g>
+  <!-- martillo -->
+  <g class="hammer">
+    <rect x="200" y="56" width="118" height="9" rx="4.5" fill="#B6BFCE"/>
+    <rect x="182" y="50" width="34" height="58" rx="6" fill="#56627F"/>
+    <rect x="182" y="104" width="34" height="10" rx="3" fill="#8792A6"/>
+  </g>
+</svg>

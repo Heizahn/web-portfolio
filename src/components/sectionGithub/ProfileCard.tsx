@@ -44,7 +44,7 @@ export default function ProfileCard({ user }: Props) {
 					href={user.html_url}
 					target='_blank'
 					rel='noopener noreferrer'
-					className='inline-flex items-center gap-1.5 text-sm text-[#0071e3] hover:underline underline-offset-2 mt-0.5'
+					className='inline-flex items-center gap-1.5 text-sm text-flame hover:underline underline-offset-2 mt-0.5'
 				>
 					<FiGithub className='text-base' />@{user.login}
 				</a>

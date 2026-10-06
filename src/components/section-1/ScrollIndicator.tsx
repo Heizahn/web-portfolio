@@ -21,7 +21,7 @@ export default function ScrollIndicator({ label }: { label: string }) {
 				<motion.span
 					animate={{ opacity: [1, 0], y: [0, 6] }}
 					transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
-					className='block w-1 h-2 rounded-full bg-gradient-to-b from-brand-500 to-accent-500'
+					className='block w-1 h-2 rounded-full bg-gradient-to-b from-ember to-spark'
 				/>
 			</motion.div>
 		</motion.a>

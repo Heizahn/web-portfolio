@@ -69,13 +69,13 @@ export default function Navbar() {
 									<Link
 										href={href}
 										className={`relative inline-block px-4 py-2 rounded-full transition-colors ${
-											active === id ? 'text-white' : 'text-ink hover:text-ink'
+											active === id ? 'text-on-ember' : 'text-ink hover:text-ink'
 										}`}
 									>
 										{active === id && (
 											<motion.span
 												layoutId='nav-active'
-												className='absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-brand-500 to-accent-500 shadow-glow'
+												className='absolute inset-0 -z-10 rounded-full bg-molten shadow-glow'
 												transition={{ type: 'spring', stiffness: 380, damping: 30 }}
 											/>
 										)}
@@ -146,7 +146,7 @@ export default function Navbar() {
 											onClick={close}
 											className={`block px-4 py-3 rounded-xl transition ${
 												active === id
-													? 'bg-gradient-to-r from-brand-500 to-accent-500 text-white shadow-glow'
+													? 'bg-molten shadow-glow'
 													: 'text-ink hover:bg-surface-muted'
 											}`}
 										>

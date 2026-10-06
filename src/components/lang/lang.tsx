@@ -77,7 +77,7 @@ export default function Lang() {
 										}}
 										className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-ink transition ${
 											active
-												? 'bg-gradient-to-r from-brand-500/20 to-accent-500/20 font-semibold'
+												? 'bg-gradient-to-r from-ember/20 to-spark/20 font-semibold'
 												: 'hover:bg-surface-muted'
 										}`}
 									>
