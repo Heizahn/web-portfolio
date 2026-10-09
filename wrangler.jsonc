@@ -1,0 +1,19 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "heizahn-portfolio",
+	"compatibility_date": "2025-09-01",
+	// Static site from `next build` (output: 'export'). No Worker script needed.
+	"assets": {
+		"directory": "./out",
+		"not_found_handling": "404-page"
+	}
+
+	// Dominio propio: cuando el dominio esté agregado como zona en Cloudflare,
+	// 1) descomenta este bloque (y añade la coma tras "assets"),
+	// 2) cambia SITE_URL en src/env/env.ts,
+	// 3) haz push a main (o `npm run deploy`).
+	// "routes": [
+	// 	{ "pattern": "tu-dominio.com", "custom_domain": true },
+	// 	{ "pattern": "www.tu-dominio.com", "custom_domain": true }
+	// ]
+}

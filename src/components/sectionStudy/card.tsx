@@ -71,8 +71,8 @@ export default function Card({
 						<GithubIcon /> {githubText}
 					</a>
 				) : githubText ? (
-					<span className='inline-flex items-center gap-1.5 mt-4 text-xs font-medium px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'>
-						<span className='w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse' />
+					<span className='inline-flex items-center gap-1.5 mt-4 text-xs font-medium px-3 py-1 rounded-full bg-verdigris/15 text-verdigris border border-verdigris/30'>
+						<span className='w-1.5 h-1.5 rounded-full bg-verdigris animate-pulse' />
 						{githubText}
 					</span>
 				) : null}

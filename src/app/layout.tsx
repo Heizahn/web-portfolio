@@ -5,7 +5,7 @@ import './globals.css';
 import EmberField from '@/components/ds/EmberField';
 import { LangContextProvider } from '@/components/context/lang-context';
 import { ThemeProvider } from '@/components/theme/ThemeProvider';
-import { Github, LinkedIn, MAILTO } from '@/env/env';
+import { Github, LinkedIn, MAILTO, SITE_URL } from '@/env/env';
 
 const instrumentSans = Instrument_Sans({
 	subsets: ['latin'],
@@ -25,7 +25,6 @@ const jetbrainsMono = JetBrains_Mono({
 	display: 'swap',
 });
 
-const SITE_URL = 'https://heizahn.dev';
 const NAME = 'Humberto Bracho';
 const ROLE_ES = 'Desarrollador Full Stack — React, Node/Bun, Rust';
 const ROLE_EN = 'Full Stack Developer — React, Node/Bun, Rust';
@@ -119,7 +118,7 @@ const jsonLd = {
 	name: NAME,
 	alternateName: 'Heizahn',
 	url: SITE_URL,
-	image: `${SITE_URL}/opengraph-image`,
+	image: `${SITE_URL}/opengraph-image.png`,
 	jobTitle: ROLE_EN,
 	description: DESC_EN,
 	email: MAILTO.replace(/^mailto:/, ''),

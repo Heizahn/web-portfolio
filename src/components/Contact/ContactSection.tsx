@@ -95,8 +95,8 @@ export default function ContactSection() {
 			>
 				<div className='inline-flex items-center gap-2 px-3 py-1 rounded-full glass-sm text-xs font-medium text-ink-muted mb-4'>
 					<span className='relative flex h-2 w-2'>
-						<span className='absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping' />
-						<span className='relative inline-flex h-2 w-2 rounded-full bg-emerald-500' />
+						<span className='absolute inline-flex h-full w-full rounded-full bg-verdigris opacity-75 animate-ping' />
+						<span className='relative inline-flex h-2 w-2 rounded-full bg-verdigris' />
 					</span>
 					{t.availability}
 				</div>
@@ -203,7 +203,7 @@ export default function ContactSection() {
 
 					<div className='flex items-center justify-between gap-4 mt-1'>
 						{status === 'sent' ? (
-							<p className='text-xs text-emerald-600 dark:text-emerald-400'>
+							<p className='text-xs text-verdigris'>
 								{t.form.success}
 							</p>
 						) : (

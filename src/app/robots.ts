@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next';
-
-const SITE_URL = 'https://heizahn.dev';
+import { SITE_URL } from '@/env/env';
 
 export default function robots(): MetadataRoute.Robots {
 	return {

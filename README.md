@@ -29,8 +29,19 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on Cloudflare
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site is a static export (`output: 'export'` in `next.config.mjs`), served by Cloudflare Workers static assets (`wrangler.jsonc`).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm run preview   # build + serve locally with wrangler
+npm run deploy    # build + publish to Cloudflare
+```
+
+GitHub data (profile, repos, languages) is fetched at **build time**. The `Deploy to Cloudflare` GitHub Action (`.github/workflows/deploy.yml`) redeploys on every push to `main` and every 6 hours to keep it fresh. It needs two repository secrets: `CLOUDFLARE_API_TOKEN` (template "Edit Cloudflare Workers") and `CLOUDFLARE_ACCOUNT_ID`.
+
+### Custom domain
+
+1. Add the domain as a zone in Cloudflare.
+2. Uncomment the `routes` block in `wrangler.jsonc`.
+3. Change `SITE_URL` in `src/env/env.ts` (used by canonical, Open Graph, sitemap and robots).
