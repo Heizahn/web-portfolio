@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	// Static export: `next build` writes the site to ./out, served by Cloudflare (wrangler.jsonc).
+	output: 'export',
 	images: {
+		// No image optimization server on a static host.
+		unoptimized: true,
 		remotePatterns: [
 			{
 				protocol: 'https',

@@ -13,6 +13,12 @@ export const PM2 = process.env.NEXT_PUBLIC_PM2 ?? '';
 
 export const PM3 = process.env.NEXT_PUBLIC_PM3 ?? '';
 
+// URL pública del sitio (canonical, Open Graph, sitemap, robots).
+// Al conectar el dominio propio, cambia solo este valor (ver wrangler.jsonc).
+export const SITE_URL = (
+	process.env.NEXT_PUBLIC_SITE_URL ?? 'https://heizahn-portfolio.humbertorbw.workers.dev'
+).replace(/\/$/, '');
+
 // GitHub handle (usado por la API)
 export const GithubUser =
 	process.env.NEXT_PUBLIC_GITHUB_USER ?? 'Heizahn';

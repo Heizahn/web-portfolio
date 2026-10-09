@@ -118,7 +118,7 @@ export default function Showcase() {
 				{/* Hero */}
 				<header className='relative pt-16 pb-20'>
 					<Link href='/' className='inline-flex items-center gap-2 text-sm text-ink-muted hover:text-ember transition'>
-						<FiArrowLeft /> heizahn.dev
+						<FiArrowLeft /> Volver al portfolio
 					</Link>
 					<div className='mt-12 grid items-center gap-10 md:grid-cols-[1.2fr_1fr]'>
 						<div>

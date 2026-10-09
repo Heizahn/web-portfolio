@@ -88,8 +88,8 @@ export default function ProjectArticle({
 								<div className='absolute top-3 right-3 z-10'>
 									<span className='inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-black/60 backdrop-blur-sm text-white border border-white/10'>
 										<span className='relative flex h-2 w-2'>
-											<span className='absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping' />
-											<span className='relative inline-flex h-2 w-2 rounded-full bg-emerald-500' />
+											<span className='absolute inline-flex h-full w-full rounded-full bg-verdigris opacity-75 animate-ping' />
+											<span className='relative inline-flex h-2 w-2 rounded-full bg-verdigris' />
 										</span>
 										Live
 									</span>
