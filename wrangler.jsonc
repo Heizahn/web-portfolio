@@ -13,7 +13,7 @@
 	// 2) cambia SITE_URL en src/env/env.ts,
 	// 3) haz push a main (o `npm run deploy`).
 	// "routes": [
-	// 	{ "pattern": "heizahn.dev", "custom_domain": true },
-	// 	{ "pattern": "www.heizahn.dev", "custom_domain": true }
+	// 	{ "pattern": "tu-dominio.com", "custom_domain": true },
+	// 	{ "pattern": "www.tu-dominio.com", "custom_domain": true }
 	// ]
 }
